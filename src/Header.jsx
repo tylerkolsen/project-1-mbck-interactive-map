@@ -3,7 +3,10 @@
 const Header = () => {
 
     return(
-        <p>Header.jsx</p>
+        <nav>
+            <p>Header.jsx</p>
+        </nav>
+        
     )
 }
 
