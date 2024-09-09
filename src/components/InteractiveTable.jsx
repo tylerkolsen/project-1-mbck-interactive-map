@@ -1,25 +1,26 @@
 import BlankSquare from "./BlankSquare"
+import CollectSquare from "./CollectSquare"
+import collectSet from "../../Backend/collectSet"
 
 
 const InteractiveTable = () => {
 
     const gridConstruct = () => {
         let gridArr = []
-        for (let i = 1; i < 4944; i++) {
+        for (let i = 1; i < 4945; i++) {
             gridArr.push(i)
         }
         return gridArr
     }
     
     const grid = gridConstruct().map((idNum) => {
-        return <BlankSquare key={idNum} id={idNum} />
+        return (
+            collectSet.has(idNum) ?
+            <CollectSquare key={idNum} id={idNum} />
+            : <BlankSquare key={idNum} id={idNum} />
+        )
     })
         
-    // w-[60vw] grid grid-cols-102 gap-0
-    // <div className=" h-[94vh] w-[100vw] place-items-center">
-    //         <div className="w-[65vw] h-[45vh] grid grid-cols-102 gap-0">
-
-
 
     return (
         <div className="h-[94vh] w-[100vw] bg-map bg-contain bg-no-repeat bg-center">

@@ -1,5 +1,6 @@
 import Header from "./components/Header"
 import InteractiveTable from "./components/InteractiveTable"
+import { Outlet } from "react-router-dom"
 
 function App() {
 
@@ -7,7 +8,11 @@ function App() {
   return (
     <>
       <Header />
-      <InteractiveTable />
+      <main>
+        <body>
+          <Outlet />
+        </body>
+      </main>
     </>
   )
 }

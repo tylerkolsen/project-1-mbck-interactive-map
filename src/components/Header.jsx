@@ -1,10 +1,21 @@
-
+import { NavLink } from "react-router-dom"
+import LogoutButton from "./LogoutButton"
 
 const Header = () => {
 
     return(
         <nav className="h-[6vh] border-b-2">
-            <p>Header.jsx</p>
+            <ul className="flex flex-row justify-evenly">
+                <li>
+                    <NavLink to="/History">History</NavLink>
+                </li>
+                <li>
+                    <NavLink to="Note">Notes</NavLink>
+                </li>
+                <li>
+                    <LogoutButton />
+                </li>
+            </ul>
         </nav>
         
     )
