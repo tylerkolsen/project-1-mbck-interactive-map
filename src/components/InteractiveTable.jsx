@@ -5,7 +5,7 @@ const InteractiveTable = () => {
 
     const gridConstruct = () => {
         let gridArr = []
-        for (let i = 1; i < 4795; i++) {
+        for (let i = 1; i < 4944; i++) {
             gridArr.push(i)
         }
         return gridArr
@@ -22,9 +22,11 @@ const InteractiveTable = () => {
 
 
     return (
-        <div className="flex flex-row h-[94vh] w-[100vw] place-items-center absolute start-[15.32vw]">
-            <div className=" grid grid-cols-102 gap-0 auto-rows-min place-items-center">
-                {grid}
+        <div className="h-[94vh] w-[100vw] bg-map bg-contain bg-no-repeat bg-center">
+            <div className="flex flex-row h-[94vh] w-[100vw] place-items-center absolute start-[15.67vw] top-[5.6vh]">
+                <div className=" grid grid-cols-103 gap-[0.0425vw] auto-rows-min place-items-center">
+                    {grid}
+                </div>
             </div>
         </div>
     )

@@ -8,7 +8,10 @@ export default {
     extend: {
       // Allowing for more than 12 columns in the grid pattern
       gridTemplateColumns: {
-        '102': 'repeat(102, minmax(0, 1fr))',
+        '103': 'repeat(103, minmax(0, 1fr))',
+      },
+      backgroundImage: {
+        'map': "url('/mbck-map.jpg')",
       }
     },
   },
