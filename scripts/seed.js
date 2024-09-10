@@ -7,7 +7,7 @@ await db.sync({ force: true })
 
 console.log('Seeding database...')
 
-// convert the set into an array, so that it can be used wihtin promise.all()
+// convert the set into an array, so that it can be used within promise.all()
 const setArr = [...collectSet]
 
 // creation of collectible database
