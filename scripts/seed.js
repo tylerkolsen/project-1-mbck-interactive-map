@@ -1,5 +1,5 @@
-import { User, Collectible, Note, db } from './src/model.js'
-import collectSet from './Backend/collectSet.js'
+import { User, Collectible, Note, db } from '../src/model.js'
+import collectSet from '../Backend/collectSet.js'
 import lodash from 'lodash' 
 
 console.log('Syncing database...')
@@ -7,9 +7,12 @@ await db.sync({ force: true })
 
 console.log('Seeding database...')
 
+// convert the set into an array, so that it can be used wihtin promise.all()
+const setArr = [...collectSet]
+
 // creation of collectible database
 const collectsInDB = await Promise.all(
-    collectSet.forEach((col) => {
+    setArr.map((col) => {
 
         const newCollect = Collectible.create({
             collectibleId: col,
