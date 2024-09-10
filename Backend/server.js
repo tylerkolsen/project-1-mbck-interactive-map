@@ -48,6 +48,13 @@ app.get('/api/collect/:collectibleId', controller.collect)
 // POST request, as we're updating the database
 app.post('/api/addNote', loginRequired, controller.addNote)
 
+// route for editing the description of an existing note
+// This will allow the user to update the description of the note within the DB
+// PUT request, as this is an edit
+app.put('/api/editNote', 
+    // loginRequired, 
+    controller.editNote)
+
 // route for getting user history information
 // User must be logged in
 // GET request, as we are only grabbing information from the DB

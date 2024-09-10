@@ -71,7 +71,7 @@ const controller = {
         await UsersCollectClick.destroy({
             where: { userId }
         })
-        res.json({ sucess: true })
+        res.json({ success: true })
     },
     notes:
     async (req, res) => {
@@ -80,8 +80,17 @@ const controller = {
             where: { userId }
         })
         res.json(userNotes)
-    }
+    },
+    editNote:
+    async (req, res) => {
+        const { noteId, description } = req.body
+        let noteToEdit = await Note.findByPk(noteId)
+        await noteToEdit.update({
+            description
+        })
 
+        res.json(noteToEdit)
+    }
 }
 
 export default controller
