@@ -45,6 +45,41 @@ const controller = {
             }
         )
         res.json(singleCollect)
+    },
+    addNote: 
+    async (req, res) => {
+        const { userId } = req.session
+        const { collectibleId, description } = req.body
+        await Note.create({
+            description,
+            userId,
+            collectibleId,
+        })
+        res.json({ success: true })
+    },
+    history:
+    async (req, res) => {
+        const { userId } = req.session
+        const userHistory = await UsersCollectClick.findAll({
+            where: { userId },
+        })
+        res.json(userHistory)
+    },
+    deleteHistory:
+    async (req, res) => {
+        const { userId } = req.session
+        await UsersCollectClick.destroy({
+            where: { userId }
+        })
+        res.json({ sucess: true })
+    },
+    notes:
+    async (req, res) => {
+        const { userId } = req.session
+        const userNotes = await Note.findAll({
+            where: { userId }
+        })
+        res.json(userNotes)
     }
 
 }
