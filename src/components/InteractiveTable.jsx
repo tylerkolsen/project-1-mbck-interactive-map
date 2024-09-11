@@ -1,17 +1,16 @@
 import BlankSquare from "./BlankSquare"
 import CollectSquare from "./CollectSquare"
 import collectSet from "../../Backend/collectSet"
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector } from "react-redux"
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import axios from "axios"
 
 
 const InteractiveTable = () => {
     const userId = useSelector((state) => state.userId)
 
     const navigate = useNavigate()
-    const dispatch = useDispatch()
+
 
     const gridConstruct = () => {
         let gridArr = []

@@ -1,5 +1,5 @@
-
 import { User, Collectible, UsersCollectClick, Note } from '../src/model.js'
+import bcryptjs from 'bcryptjs'
 
 const handlerFunctions = {
     auth: 
@@ -18,7 +18,7 @@ const handlerFunctions = {
             return
         }
         // Check for whether the password matches
-        if (userCheck.password !== password) {
+        if (!bcryptjs.compareSync(password, userCheck.password)) {
             res.send({
                 message: "password does not match",
                 success: false
@@ -43,9 +43,12 @@ const handlerFunctions = {
         })
 
         if (!emailCheck) {
+
+            const hashedPassword = bcryptjs.hashSync(password, bcryptjs.genSaltSync(10))
+
             const newUser = await User.create({
                 email,
-                password,
+                password: hashedPassword,
             })
 
             req.session.userId = newUser.userId

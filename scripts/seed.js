@@ -1,6 +1,7 @@
 import { User, Collectible, Note, db } from '../src/model.js'
 import collectSet from '../Backend/collectSet.js'
 import lodash from 'lodash' 
+import bcryptjs from 'bcryptjs'
 
 console.log('Syncing database...')
 await db.sync({ force: true })
@@ -33,9 +34,11 @@ console.log(collectsInDB)
 // creation of user database
 // This section creates an array of objects with the email and password key
 const usersToCreate = [];
+const hashedPassword = bcryptjs.hashSync("test", bcryptjs.genSaltSync(10))
+
 for (let i = 0; i < 3; i++) {
     const email = `user${i}@test.com`
-    usersToCreate.push(User.create({ email: email, password: 'test'}))
+    usersToCreate.push(User.create({ email: email, password: hashedPassword}))
 }
 
 // This section actually creates the user entries and places them within the DB
