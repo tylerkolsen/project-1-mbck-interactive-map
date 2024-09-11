@@ -6,7 +6,7 @@ import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider } f
 import Landing from './components/Landing.jsx'
 import InteractiveTable from './components/InteractiveTable.jsx'
 import UserHistory from './components/UserHistory.jsx'
-import UserNotes from './components/UserHistory.jsx'
+import UserNotes from './components/UserNotes.jsx'
 import { Provider } from 'react-redux'
 import store from './assets/redux/store.js'
 

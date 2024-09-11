@@ -8,12 +8,14 @@ const handlerFunctions = {
         const userCheck = await User.findOne({
             where: { email }
         })
+
         // Check for whether the email is in the database
-        if (!userCheck[0]) {
+        if (!userCheck) {
             res.send({
                 message: "no username found",
                 success: false
             })
+            return
         }
         // Check for whether the password matches
         if (userCheck.password !== password) {
@@ -21,6 +23,7 @@ const handlerFunctions = {
                 message: "password does not match",
                 success: false
             })
+            return
         }
         // If we've reached here, the user exists and the password matches
             req.session.userId = userCheck.userId
@@ -38,18 +41,19 @@ const handlerFunctions = {
         const emailCheck = await User.findOne({
             where: { email }
         })
-        if (!emailCheck[0]) {
-            await User.create({
+
+        if (!emailCheck) {
+            const newUser = await User.create({
                 email,
                 password,
             })
 
-            req.session.userId = emailCheck.userId
+            req.session.userId = newUser.userId
 
             res.send({ 
                 message: "user created",
                 success: true, 
-                userId: emailCheck.userId
+                userId: newUser.userId
             })
 
         } else {

@@ -1,9 +1,17 @@
 import BlankSquare from "./BlankSquare"
 import CollectSquare from "./CollectSquare"
 import collectSet from "../../Backend/collectSet"
+import { useSelector, useDispatch } from "react-redux"
+import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+import axios from "axios"
 
 
 const InteractiveTable = () => {
+    const userId = useSelector((state) => state.userId)
+
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const gridConstruct = () => {
         let gridArr = []
@@ -20,6 +28,13 @@ const InteractiveTable = () => {
             : <BlankSquare key={idNum} id={idNum} />
         )
     })
+
+    // This runs sessionCheck on initial render, which will see if the user still has a userId in the session cookie.
+    useEffect(() => {
+        if (!userId) {
+            navigate('/')
+        }
+    }, [userId])
         
 
     return (

@@ -14,7 +14,7 @@ const Header = () => {
                     <NavLink to="/History">History</NavLink>
                 </li>
                 <li>
-                    <NavLink to="Note">Notes</NavLink>
+                    <NavLink to="/Note">Notes</NavLink>
                 </li>
                 <li>
                     <LogoutButton />
