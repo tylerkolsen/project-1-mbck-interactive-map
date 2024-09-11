@@ -7,6 +7,8 @@ import Landing from './components/Landing.jsx'
 import InteractiveTable from './components/InteractiveTable.jsx'
 import UserHistory from './components/UserHistory.jsx'
 import UserNotes from './components/UserHistory.jsx'
+import { Provider } from 'react-redux'
+import store from './assets/redux/store.js'
 
 const router = createBrowserRouter(
 createRoutesFromElements(
@@ -31,6 +33,8 @@ createRoutesFromElements(
 createRoot(document.getElementById('root')).render(
 
   <StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </StrictMode>,
 )

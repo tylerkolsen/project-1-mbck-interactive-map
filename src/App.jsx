@@ -1,18 +1,21 @@
 import Header from "./components/Header"
-import InteractiveTable from "./components/InteractiveTable"
 import { Outlet } from "react-router-dom"
+import { useSelector } from "react-redux"
 
 function App() {
+  const userId = useSelector((state) => state.userId)
 
 
   return (
     <>
-      <Header />
-      <main>
-        <body>
-          <Outlet />
-        </body>
-      </main>
+      {userId && 
+        <Header />
+      }
+      <body>
+        <main>
+         <Outlet />
+        </main>
+      </body>
     </>
   )
 }

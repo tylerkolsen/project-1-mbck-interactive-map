@@ -3,9 +3,13 @@ import LogoutButton from "./LogoutButton"
 
 const Header = () => {
 
+
     return(
         <nav className="h-[6vh] border-b-2">
             <ul className="flex flex-row justify-evenly">
+                <li> 
+                    <NavLink to="/Home">Map</NavLink>
+                </li>
                 <li>
                     <NavLink to="/History">History</NavLink>
                 </li>

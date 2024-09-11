@@ -1,22 +1,19 @@
-import { useState, useEffect } from "react"
-import { useDispatch } from "react-redux"
 import axios from "axios"
+import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
-import CreateUser from "./CreateUser"
+import { useState } from "react"
 
-const Landing = () => {
-
+function CreateUser({ setDisplayCreate }) {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
-    const [displayCreate, setDisplayCreate] = useState(false)
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
-    const handleLogin = (e) => {
+    const handleCreateUser = (e) => {
         e.preventDefault()
-        axios.post("/api/auth", {
+        axios.post('/api/createUser', {
             email: email,
             password: password
         })
@@ -26,40 +23,21 @@ const Landing = () => {
                     type: "USER_AUTH",
                     payload: res.data.userId
                 })
+                setDisplayCreate(false)
                 setEmail('')
                 setPassword('')
                 navigate('/Home')
             }
             setMessage(res.data.message)
         })
+
     }
 
-    // This function runs our session cookie check. If there is a session cookie, the server will return that value to us and confirm it is there
-    const sessionCheck = () => {
-        axios.get('/api/session-check')
-        .then((res) => {
-            if (res.data.success) {
-                dispatch({
-                    type: "USER_AUTH",
-                    payload: res.data.userId
-                })
-                navigate("/Home")
-            }
-        })
-    }
-
-    // This runs sessionCheck on initial render, which will see if the user still has a userId in the session cookie.
-    useEffect(() => {
-        sessionCheck()
-    }, [])
-
-    return displayCreate ? (
-        <CreateUser setDisplayCreate={setDisplayCreate}/>
-    ) : (
-        <div className="flex-row place-content-center">
-            <h1>Login</h1>
+  return (
+    <div className="flex-row place-content-center">
+            <h1>Create User</h1>
             <form 
-                onSubmit={handleLogin}
+                onSubmit={handleCreateUser}
                 className="flex"
             >
                 <input 
@@ -84,10 +62,10 @@ const Landing = () => {
             <h2>{message}</h2>
             <button
                 className="border-black border-[2px]"
-                onClick={() => setDisplayCreate(true)}
-            >Create Account</button>
+                onClick={() => setDisplayCreate(false)}
+            >Back to Login</button>
         </div>
-    )
+  )
 }
 
-export default Landing
+export default CreateUser
