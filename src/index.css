@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-hover:button {
+button:hover {
   cursor: pointer;
 }
+
