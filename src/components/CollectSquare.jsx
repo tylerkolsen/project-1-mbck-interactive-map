@@ -1,10 +1,8 @@
 import axios from "axios"
 import { useDispatch } from "react-redux"
-import { useSelector } from "react-redux"
 
 
 const CollectSquare = ({ id, setDisplayModal }) => {
-    const collectInfo = useSelector((state) => state.collectInfo)
 
     const dispatch = useDispatch()
 
@@ -12,6 +10,9 @@ const CollectSquare = ({ id, setDisplayModal }) => {
         axios.get(`/api/collect/${id}`)
         .then((res) => {
             if (res.data.collectible) {
+                axios.post('/api/addHistory', {
+                    collectibleId: id
+                })
                 dispatch({
                     type: "COLLECT_UPDATE",
                     payload: res.data.collectible

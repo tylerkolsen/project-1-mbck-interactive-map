@@ -6,7 +6,7 @@ const Header = () => {
 
     return(
         <nav className="h-[6vh] border-b-2">
-            <ul className="flex flex-row justify-evenly">
+            <ul className="flex flex-row h-[6vh] justify-evenly items-center">
                 <li> 
                     <NavLink to="/Home">Map</NavLink>
                 </li>
