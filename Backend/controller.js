@@ -78,12 +78,15 @@ const handlerFunctions = {
 
     collect: 
     async (req, res) => {
+        const { userId } = req.session
         const { collectibleId } = req.params
         const singleCollect = await Collectible.findOne({
             where: { collectibleId },
-            include: Note
-            }
-        )
+            include: [{
+                model: Note,
+                where: { userId }
+            }]
+        })
         res.send({
             message: "collectible information gathered",
             collectible: singleCollect

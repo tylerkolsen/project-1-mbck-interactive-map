@@ -46,7 +46,7 @@ app.post('/api/logout', loginRequired, handlerFunctions.logout)
 // Once a square is clicked, (or a collectible is selected from history/notes) this will grab the data from the datbase based on the Id of the square.
 // We'll need to gather both the collectible information, and the notes attached to it
 // GET request, as we are requesting info and nothing more
-app.get('/api/collect/:collectibleId', handlerFunctions.collect)
+app.get('/api/collect/:collectibleId', loginRequired, handlerFunctions.collect)
 
 // route for adding a note to a collectible
 // once this is submitted, we'll need to add a new note entry to the DB based on the collectible ID and the user ID

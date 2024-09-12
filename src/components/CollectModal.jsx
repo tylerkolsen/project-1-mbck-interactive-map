@@ -7,15 +7,25 @@ function CollectModal({ setDisplayModal }) {
     const { title, reward, prerequisites, picture, notes, description} = collectInfo
 
     const allNotes = notes.map((note) => {
-        return <li key={note.noteId} id={note.noteId}>{note.description}</li>
+            return <li key={note.noteId} id={note.noteId}>{note.description}</li>
     })
+
+    const handleModalChange = (e) => {
+        console.log(e.target)
+        console.log(!e.target.matches("button"))
+        if (e.target.parentElement.matches("form") || e.target.matches("button") ) {
+           return
+        } 
+        setDisplayModal(false)
+    }
 
   return (
     <div
         id="modalDiv" 
-        onClick={() => setDisplayModal(false)}
+        onClick={(e) => handleModalChange(e)}
         className="absolute z-10 w-[100vw] h-[94vh] flex bg-gray-500/50 items-center justify-center">
-        <div className="flex flex-col w-[25vw] h-[70vh] bg-white rounded-md shadow-md justify-between overflow-auto border-black border-[2px]">
+        <div 
+            className="flex flex-col w-[25vw] h-[70vh] bg-white rounded-md shadow-md justify-between overflow-auto border-black border-[2px]">
             {/* <button 
                 onClick={() => setDisplayModal(false)}
                 className="self-end px-4 pt-4"
