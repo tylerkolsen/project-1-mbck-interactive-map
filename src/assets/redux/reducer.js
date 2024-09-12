@@ -1,6 +1,8 @@
 const initialState = {
     userId: null,
-    collectInfo: null
+    collectInfo: null,
+    userNote: null,
+    userHistory: null
 }
 
 export default function reducer(state = initialState, action) {
@@ -19,6 +21,16 @@ export default function reducer(state = initialState, action) {
             return {
                 ...state,
                 collectInfo: action.payload
+            }
+        case "NOTE_UPDATE":
+            return {
+                ...state,
+                userNote: action.payload
+            }
+        case "HISTORY_UPDATE":
+            return {
+                ...state,
+                userHistory: action.payload
             }
         default:
             return state
