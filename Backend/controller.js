@@ -158,6 +158,7 @@ const handlerFunctions = {
     async (req, res) => {
         const { noteId, description } = req.body
         let noteToEdit = await Note.findByPk(noteId)
+        console.log(noteToEdit)
         await noteToEdit.update({
             description
         })
