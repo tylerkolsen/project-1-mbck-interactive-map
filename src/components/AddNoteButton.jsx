@@ -31,6 +31,7 @@ function AddNoteButton() {
                             console.error("Information not found")
                         }
                     })
+                    setNote('')
                     setDisplayAdd(false)
                 }
         })

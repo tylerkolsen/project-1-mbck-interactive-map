@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useDispatch } from "react-redux"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
-import CreateUser from "./CreateUser"
+import CreateUser from "../components/CreateUser"
 
 const Landing = () => {
 

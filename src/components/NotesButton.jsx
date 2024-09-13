@@ -15,7 +15,7 @@ function NotesButton() {
                     type: "NOTE_UPDATE",
                     payload: res.data.notes
                 })
-            navigate('/Note')
+                navigate('/Note')
             })
     }
 

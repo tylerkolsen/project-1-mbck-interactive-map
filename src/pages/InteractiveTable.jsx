@@ -1,20 +1,12 @@
-import BlankSquare from "./BlankSquare"
-import CollectSquare from "./CollectSquare"
-import collectSet from "../../Backend/collectSet"
-import CollectModal from "./CollectModal.jsx"
-import { useSelector } from "react-redux"
+import BlankSquare from "../components/BlankSquare.jsx"
+import CollectSquare from "../components/CollectSquare.jsx"
+import collectSet from "../../Backend/collectSet.js"
+import CollectModal from "../components/CollectModal.jsx"
 import { useState } from "react"
 
-
-
-
 const InteractiveTable = () => {
-    const userId = useSelector((state) => state.userId)
 
     const [displayModal, setDisplayModal] = useState(false)
-
- 
-
 
     const gridConstruct = () => {
         let gridArr = []
@@ -37,8 +29,7 @@ const InteractiveTable = () => {
                 id={idNum} 
             />
         )
-    })
-        
+    })        
 
     return (
         <>

@@ -1,8 +1,8 @@
 const initialState = {
     userId: null,
     collectInfo: null,
-    userNote: null,
-    userHistory: null
+    userNote: [],
+    userHistory: [],
 }
 
 export default function reducer(state = initialState, action) {
@@ -16,8 +16,8 @@ export default function reducer(state = initialState, action) {
             return { 
                 userId: null,
                 collectInfo: null,
-                userNote: null,
-                userHistory: null
+                userNote: [],
+                userHistory: []
             }
         case "COLLECT_UPDATE":
             return {

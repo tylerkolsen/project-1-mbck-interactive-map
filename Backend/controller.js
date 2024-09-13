@@ -1,5 +1,8 @@
 import { User, Collectible, UsersCollectClick, Note } from '../src/model.js'
 import bcryptjs from 'bcryptjs'
+import { Sequelize } from 'sequelize'
+
+const sequelize = new Sequelize('postgresql:///mbck_interactive')
 
 const handlerFunctions = {
     auth: 
@@ -78,7 +81,6 @@ const handlerFunctions = {
 
     collect: 
     async (req, res) => {
-        const { userId } = req.session
         const { collectibleId } = req.params
         const singleCollect = await Collectible.findOne({
             where: { collectibleId },
@@ -135,7 +137,16 @@ const handlerFunctions = {
     async (req, res) => {
         const { userId } = req.session
         const userNotes = await Note.findAll({
-            where: { userId }
+            where: { userId },
+            include: [{
+                model: Collectible,
+                attributes: ['title'],
+            }],
+            order: [
+                sequelize.col('collectible'),
+                sequelize.col('noteId')
+            ]
+
         })
         res.send({
             message: "note list gathered",
