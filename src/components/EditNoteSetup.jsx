@@ -37,8 +37,8 @@ function EditNoteSetup({ noteId }) {
           onClick={() => setDisplayEdit(!displayEdit)}
           className="cursor-pointer"
       /></li>
-      <li><DeleteNoteButton /></li>
-      
+      <li><DeleteNoteButton noteId={noteId} /></li>
+
       { displayEdit && 
       <form onSubmit={(e) => handleEditNote(e)}>
       <input 

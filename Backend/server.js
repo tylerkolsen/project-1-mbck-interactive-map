@@ -48,6 +48,11 @@ app.post('/api/logout', loginRequired, handlerFunctions.logout)
 // GET request, as we are requesting info and nothing more
 app.get('/api/collect/:collectibleId', loginRequired, handlerFunctions.collect)
 
+// route for getting user note information
+// User must be logged in
+// GET request, as we are only grabbing information
+app.get('/api/notes', loginRequired, handlerFunctions.notes)
+
 // route for adding a note to a collectible
 // once this is submitted, we'll need to add a new note entry to the DB based on the collectible ID and the user ID
 // POST request, as we're updating the database
@@ -57,6 +62,12 @@ app.post('/api/addNote', loginRequired, handlerFunctions.addNote)
 // This will allow the user to update the description of the note within the DB
 // PUT request, as this is an edit
 app.put('/api/editNote', loginRequired, handlerFunctions.editNote)
+
+// route for deleting an existing note
+// This will allow users to manage the notes that they've created
+// DELETE requests don't send a req.body, so I'll need something else
+// DELETE request, as this is a deletion
+app.delete('/api/deleteNote/:noteId', loginRequired, handlerFunctions.deleteNote)
 
 // route for getting user history information
 // User must be logged in
@@ -72,10 +83,5 @@ app.post('/api/addHistory', loginRequired, handlerFunctions.addHistory)
 // User must be logged in
 // DELETE request, as we are removing all history with this call
 app.delete('/api/deleteHistory', loginRequired, handlerFunctions.deleteHistory)
-
-// route for getting user note information
-// User must be logged in
-// GET request, as we are only grabbing information
-app.get('/api/notes', loginRequired, handlerFunctions.notes)
 
 ViteExpress.listen(app, port, () => console.log(`Server is listening on http://localhost:${port}`))

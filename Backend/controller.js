@@ -189,8 +189,6 @@ const handlerFunctions = {
     async (req, res) => {
         const { userId } = req.session
         const { collectibleId } = req.body
-        console.log(userId)
-        console.log(collectibleId)
         const clickHistory = await UsersCollectClick.findAll({
             where: { collectibleId }
         })
@@ -210,7 +208,20 @@ const handlerFunctions = {
                 success: true
             })
         }
+    },
 
+    deleteNote:
+    async (req, res) => {
+        const { noteId } = req.params
+        console.log("hit deleteNote")
+        console.log(noteId)
+        await Note.destroy({
+            where: { noteId }
+        })
+        res.send({ 
+            message: "note deleted successfully",
+            success: true 
+        })
     }
 }
 
