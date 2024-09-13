@@ -4,6 +4,7 @@ import { useState } from "react"
 import CollectModal from "../components/CollectModal.jsx"
 import { useDispatch } from "react-redux"
 import handleCollect from "../Functions/handleCollect"
+import DeleteHistoryButton from "../components/DeleteHistoryButton.jsx"
 
 
 const UserHistory = () => {
@@ -33,6 +34,7 @@ const UserHistory = () => {
                 <ul>
                     {allHistory}
                 </ul>
+                <DeleteHistoryButton />
             </div>
         </>
     )
