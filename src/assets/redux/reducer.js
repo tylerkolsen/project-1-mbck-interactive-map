@@ -14,8 +14,10 @@ export default function reducer(state = initialState, action) {
             }
         case "LOGOUT":
             return { 
-                ...state,
-                userId: null 
+                userId: null,
+                collectInfo: null,
+                userNote: null,
+                userHistory: null
             }
         case "COLLECT_UPDATE":
             return {

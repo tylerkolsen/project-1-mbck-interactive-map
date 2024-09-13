@@ -9,6 +9,7 @@ const CollectSquare = ({ id, setDisplayModal }) => {
     const handleCollect = (id) => {
         axios.get(`/api/collect/${id}`)
         .then((res) => {
+            console.log(res.data)
             if (res.data.collectible) {
                 axios.post('/api/addHistory', {
                     collectibleId: id

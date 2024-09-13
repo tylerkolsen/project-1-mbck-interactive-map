@@ -83,8 +83,7 @@ const handlerFunctions = {
         const singleCollect = await Collectible.findOne({
             where: { collectibleId },
             include: [{
-                model: Note,
-                where: { userId }
+                model: Note
             }]
         })
         res.send({

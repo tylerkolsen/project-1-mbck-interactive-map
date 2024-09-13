@@ -3,11 +3,14 @@ import { IoIosCloseCircle } from "react-icons/io";
 import AddNoteButton from "./AddNoteButton.jsx";
 
 function CollectModal({ setDisplayModal }) {
+    const userId = useSelector((state) => state.userId)
     const collectInfo = useSelector((state) => state.collectInfo)
     const { title, reward, prerequisites, picture, notes, description} = collectInfo
 
     const allNotes = notes.map((note) => {
+        if (note.userId === userId) {
             return <li key={note.noteId} id={note.noteId}>{note.description}</li>
+        }
     })
 
     const handleModalChange = (e) => {
