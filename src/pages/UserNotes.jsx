@@ -3,15 +3,11 @@ import { useState } from "react"
 import CollectModal from "../components/CollectModal.jsx"
 import { useDispatch } from "react-redux"
 import handleCollect from "../Functions/handleCollect.js"
-import { HiOutlinePencilSquare } from "react-icons/hi2"
 import EditNoteSetup from "../components/EditNoteSetup.jsx"
-
-import DeleteNoteButton from "../components/DeleteNoteButton.jsx"
 
 const UserNotes = () => {
     const userNote = useSelector((state) => state.userNote)
     const [displayModal, setDisplayModal] = useState(false)
-    const [displayEdit, setDisplayEdit] = useState(false)
 
     const dispatch = useDispatch()
 
