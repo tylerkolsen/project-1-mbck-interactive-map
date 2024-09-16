@@ -1,0 +1,8 @@
+{
+    "collectible_id": "NUMBER",
+    "title": "STRING",
+    "reward": "STRING",
+    "prerequisites": "STRING",
+    "picture": "TEXT",
+    "description": "TEXT"
+}
