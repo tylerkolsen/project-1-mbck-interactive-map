@@ -177,9 +177,9 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 434	title 434	reward 434	prereq 434	picture 434	desc 434
 435	title 435	reward 435	prereq 435	picture 435	desc 435
 437	title 437	reward 437	prereq 437	picture 437	desc 437
-463	title 463	reward 463	prereq 463	picture 463	desc 463
+463	Bombs in the Sky	Life Heart	20 Bombs, Dragon Form	picture 463	Fly up to the top left of the Village of Aeria to find a spell chest above the Nurse's location. Use the 20 Bombs on the chest to unlock it.
 544	title 544	reward 544	prereq 544	picture 544	desc 544
-589	title 589	reward 589	prereq 589	picture 589	desc 589
+589	Cut Through the Darkness	Life Heart	Golden Sword	picture 589	After obtaining the Golden Sword, go left from the Fast Travel point and take the portal. Continue onward until you reach a split between left and right; go left and cut through the dark matter. You'll eventually drop into a room with a cyclops and two gem enemies. Defeating the cyclops will spawn the chest.
 597	title 597	reward 597	prereq 597	picture 597	desc 597
 627	False Ceiling Saunter	Boomerang Truffle	Frog Form	picture 627	On the far left of the Volcano will be a circular section with a save point in the top left. Go from the save point and drop downwards, which will place you on a crumbling path. Move to the right until you come to the end and jump upwards. There will be a false ceiling that reveals a room with a slingshot. Use the slingshot to go up to the door where the truffle is located.
 650	title 650	reward 650	prereq 650	picture 650	desc 650
@@ -195,7 +195,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 804	title 804	reward 804	prereq 804	picture 804	desc 804
 840	title 840	reward 840	prereq 840	picture 840	desc 840
 845	Skyward Discovery	Fire Truffle	Lion Form, Lion Talisman	picture 845	You'll find the door to this truffle in the large room that eventually fills halfway with lava. On the top portion of this room is a section meant for the lion to dash. After completing the first portion, you'll come across a section that spawns a flaming enemy. Look toward the roof, and you'll see a section of breakable stones that you can clear using the lion's upward dash. Clear these rocks to find the secret door that leads to the truffle.
-849	title 849	reward 849	prereq 849	picture 849	desc 849
+849	Sweeping Mines in the Volcano	Life Heart	Ice Boots, Pig Form, Lion Form, Lion Talisman	picture 849	Starting in the main room with the professor, head right to find a lava geyser. Stand on top of it with the Ice Boots to reach a new section. This room has many destructible blocks that have hidden mines within them. Use Pig Form's Sniffer ability to detect the mines, and break through with Lion Form's Charge. Make sure to check for mines often to avoid dying to them. At the end of the mine maze is the chest.
 1054	title 1054	reward 1054	prereq 1054	picture 1054	desc 1054
 1112	title 1112	reward 1112	prereq 1112	picture 1112	desc 1112
 1159	title 1159	reward 1159	prereq 1159	picture 1159	desc 1159
@@ -203,7 +203,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 1255	title 1255	reward 1255	prereq 1255	picture 1255	desc 1255
 1356	title 1356	reward 1356	prereq 1356	picture 1356	desc 1356
 1362	title 1362	reward 1362	prereq 1362	picture 1362	desc 1362
-1366	title 1366	reward 1366	prereq 1366	picture 1366	desc 1366
+1366	Boomerang to Victory above the Waterfall	Life Heart	4 Boomerangs 	picture 1366	Using the Fast Travel point as reference, go right one screen to the top of the waterfall. Continue heading right and pass through the false wall. This will reveal a spell chest, which requires 4 uses of Boomerang to open.
 1675	Ice Stairway to Heaven	Tornado Truffle	Ice Sword, Form that can use equipment	picture 1675	After you receive the Ice Sword from the professor, you'll come across a waterfall. Instead of only crossing the waterfall using the Ice Sword, instead climb upwards by building a stairway. The room above the waterfall contains the truffle.
 1771	title 1771	reward 1771	prereq 1771	picture 1771	desc 1771
 1781	title 1781	reward 1781	prereq 1781	picture 1781	desc 1781
@@ -215,8 +215,8 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2174	title 2174	reward 2174	prereq 2174	picture 2174	desc 2174
 2187	title 2187	reward 2187	prereq 2187	picture 2187	desc 2187
 2194	title 2194	reward 2194	prereq 2194	picture 2194	desc 2194
-2227	title 2227	reward 2227	prereq 2227	picture 2227	desc 2227
-2269	title 2269	reward 2269	prereq 2269	picture 2269	desc 2269
+2227	Bouncing the Guard	Life Heart	Morning Star with the first upgrade, Cloud Boots	picture 2227	When you reach the outside section of the castle with wind currents, ride the first section to the lower right corner. Unequip the Cloud Boots to reach the lever. Flipping the lever will cause the currents to connect to a door in the bottom left. Enter the door to find the chest behind a gate requiring a cog. Attack the floor with the morningstar to bounce the guard upward toward you. After a few bounces you can defeat the guard, who drops a cog. Use the cog to open the gate and access the chest.
+2269	Breaking Down the Walls	Life Heart	Lion Form	picture 2269	After defeating the boss of the Lost Temples, you'll proceed through a long horizontal corridor. Keep moving forward until you find a section in the background with two doors. Transition to the background using the a spring, and then enter either door. Charge either wall to break through to the lower portion of the room which contains the chest.
 2283	Bat Cleanup after the Giant Boulder	Thunder Truffle	None	picture 2283	After surviving being chased by the Giant Boulder, head back to the long horizontal room with spikes continually going up and down. In the center of the hallway is a barred door. Defeating the three bats in the room will open the door, allowing you to collect the Thunder Truffle.
 2372	title 2372	reward 2372	prereq 2372	picture 2372	desc 2372
 2374	title 2374	reward 2374	prereq 2374	picture 2374	desc 2374
@@ -224,7 +224,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2376	title 2376	reward 2376	prereq 2376	picture 2376	desc 2376
 2384	title 2384	reward 2384	prereq 2384	picture 2384	desc 2384
 2491	title 2491	reward 2491	prereq 2491	picture 2491	desc 2491
-2494	Ground Pound Jump to Glory	Thunder Truffle	Pig Form	picture 2494	After meeting with Foximus' wife, you'll be introduced to a giant tree. If you climb one tile above, you'll notice an opening to your left. Leave to the next tile to find a bat hovering in place. Ground pound the bat to gain extra jump distance. You'll need to land on the door to the left, which is above the magic shop.
+2494	Ground Pound Jump to Glory	Thunder Truffle	Pig Form	picture 2494	After meeting with Foximus' wife Ginger, you'll be introduced to a giant tree. If you climb one tile above, you'll notice an opening to your left. Leave to the next tile to find a bat hovering in place. Ground pound the bat to gain extra jump distance. You'll need to land on the door to the left, which is above the magic shop.
 2498	title 2498	reward 2498	prereq 2498	picture 2498	desc 2498
 2509	title 2509	reward 2509	prereq 2509	picture 2509	desc 2509
 2539	title 2539	reward 2539	prereq 2539	picture 2539	desc 2539
@@ -233,7 +233,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2591	title 2591	reward 2591	prereq 2591	picture 2591	desc 2591
 2609	title 2609	reward 2609	prereq 2609	picture 2609	desc 2609
 2613	The Paired Pillars Problem	Fire Truffle	Pig Form, Frog Form	picture 2613	Entering the room to the left will greet you with two pillars and a slingshot in between them. Use the slingshot to reach the top of the right pillar, and then ground pound with the pig form. Continue ground pounding until you reveal the secret door that leads to the truffle.
-2625	title 2625	reward 2625	prereq 2625	picture 2625	desc 2625
+2625	Lupia Windmill Rooftop Escapades	Life Heart	Snake Form, 20 Fireballs or Dragon Form	picture 2625	After you obtain Snake Form you can reactivate the windmill in the Village of Lupia. This will restart the windmill, which you can use to reach the high platform to the left of the main windmill. To open the spell chest, you'll either need 20 charges of the Fireball spell, or Dragon Form.
 2626	title 2626	reward 2626	prereq 2626	picture 2626	desc 2626
 2631	title 2631	reward 2631	prereq 2631	picture 2631	desc 2631
 2638	Royal Guard Rumble	Bomb Truffle	None	picture 2638	When you first gain access to the Castle of Lupia, you'll enter a long horizontal corridor filled with royal guards. At the end of the hallway is a blocked door. You'll need to defeat all of the guards in this corridor, which will open the door. Inside the door is the truffle.
@@ -243,8 +243,8 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2668	title 2668	reward 2668	prereq 2668	picture 2668	desc 2668
 2670	title 2670	reward 2670	prereq 2670	picture 2670	desc 2670
 2674	title 2674	reward 2674	prereq 2674	picture 2674	desc 2674
-2705	title 2705	reward 2705	prereq 2705	picture 2705	desc 2705
-2712	title 2712	reward 2712	prereq 2712	picture 2712	desc 2712
+2705	Pepelogoo's Gift	Life Heart	None	picture 2705	After freeing Pepelogoo from his cage in the Misty Woods, he'll fly upwards. This will release a vine that you can climb up to reach a new screen with the chest.
+2712	Minesweeper Madness	Life Heart	Snake Form, Lion Form, Pirate Doubloon	picture 2712	When you reach the section of Green Fields that heads upwards towards the Lost Temples, don't go upward. Instead, use Lion Form to run across the poisoned water to the left. You'll need the Pirate Doubloon to restore your charge gauge with the floating yellow pirate souls. At then end of the poisoned water you'll find a door. This door leads to a series of destructible blocks which are trapped with mines. Use Pig Form's Sniffer ability to detect where the mines are. You will eventually reach a point where the floor beneath you has no safe path downward; when this happens, look for a snake hole on the left side. This will place you at the bottom of the floor with the chest.
 2716	title 2716	reward 2716	prereq 2716	picture 2716	desc 2716
 2722	title 2722	reward 2722	prereq 2722	picture 2722	desc 2722
 2723	title 2723	reward 2723	prereq 2723	picture 2723	desc 2723
@@ -265,10 +265,10 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 3382	Slingshot Through the Sewers	Bomb Truffle	Frog Form, Pig Form	picture 3382	Return down the path that you fell through after being turned into a pig by your uncle. You'll fall into water, where you can jump out to a platform that contains smoke. You can then use Pig Form's Sniffer ability to reveal the door that leads to the truffle. If you go too far down the waterway, you can get back up by using the slingshot as Frog Form, and then swim against the current.
 3478	title 3478	reward 3478	prereq 3478	picture 3478	desc 3478
 3661	Flying Through the Spiky Maze	Thunder Truffle	Dragon Form	picture 3661	When you first arrive at the falls, make your way towards the right by flying whenever the waterfalls are inactive. When you reach the end of the room, fly up to the left instead of going to the next map tile. You'll find a secret passage which leads to a new room above you. Make your way to the right. You'll need to dodge spikes and ice mosquitoes while not hitting the water current below. If you're having trouble, you can come back when you have the Dragon Talisman. The door at the end will lead to the truffle.
-3784	title 3784	reward 3784	prereq 3784	picture 3784	desc 3784
+3784	Nose Goes for the Ghost	Life Heart	Pig Form	picture 3784	Obtaining this Life Heart involves following a ghost through the sewers. There are three locations you'll need to uncover, each hiding the ghost using smoke. Using Pig Form's Sniffer ability will reveal the ghost and cause it to move to the next location. After the third reveal, the ghost will fly to the bottom of the sewers; remove the smoke that you find to reveal the chest.
 3968	Swimming with the Fishes	Boomerang Truffle	None	picture 3968	After finishing the Crystal Caves, you can enter the first portion of The Falls. Fall down to the water below, and defeat the three fish. Frog form will make this much easier. The wall to the right will open, leading to the room which contains the truffle.
-4268	title 4268	reward 4268	prereq 4268	picture 4268	desc 4268
-4369	title 4369	reward 4369	prereq 4369	picture 4369	desc 4369
+4268	Melting Through with the Crimson Boots	Life Heart	Crimson Boots, Snake Form, Snake Talisman, Form that can use equipment	picture 4268	The room above should have destructible blocks attached to moss. Use Snake Form to charge through the blocks. You'll enter a room with a chest underneath a layer of ice blocks; equip the Crimson Boots and melt the ice blocks by standing on them.
+4369	Timed Underwater Traversal	Life Heart	Snake Form	picture 4369	This room will have a normal save point, a slingshot on the right, and some water below. Use Snake Form's Poison Spit ability to light up the crystal, which will lower the wall with moss. Descend through the water and then rise back up in time, and then jump on the wall moss as Snake Form. Wait for the timer to run out, which will raise the wall back up and allow access to the chest
 4402	title 4402	reward 4402	prereq 4402	picture 4402	desc 4402
 4500	title 4500	reward 4500	prereq 4500	picture 4500	desc 4500
 4609	title 4609	reward 4609	prereq 4609	picture 4609	desc 4609
@@ -277,8 +277,8 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2798	Climb the Crowded Vine	Tornado Truffle	None	picture 2798	When entering the room below this truffle, you'll see a group of mushroom enemies and a vine in the center. Climb the vine upward until you reach the room with the truffle.
 2823	Below the Mosquito	Thunder Truffle	Pig Form	picture 2823	The tile above includes a mosquito that you'll need to ground pound to reach the other side. Instead of moving on, fall into the pit below. You'll find smoke on the left side of the pit, which will reveal a secret door when using Pig Form's sniffer ability.
 2858	title 2858	reward 2858	prereq 2858	picture 2858	desc 2858
-2868	title 2868	reward 2868	prereq 2868	picture 2868	desc 2868
-2908	title 2908	reward 2908	prereq 2908	picture 2908	desc 2908
+2868	Swimming up in the Sunken Ship	Life Heart	Depends on your stage of the game	picture 2868	You can obtain this Life Heart in the very beginning, but it can easily be picked up later as well. You'll need to sink underwater until you reach the underside of the sunken ship. At the very bottom you'll notice windows closest to you; swim upwards when you're underneath the second window from the left. You'll go through a false ceiling, which will reveal a room with the chest.
+2908	One Big Happy Family	Life Heart	None	picture 2908	The way to the deeper part of the Misty Woods will be locked until you save Jill, Foximus' daughter, from King Mushroom. After saving her, the family will thank you and open the way to the next area. This includes a chest that contains the Life Heart.
 2959	title 2959	reward 2959	prereq 2959	picture 2959	desc 2959
 2994	title 2994	reward 2994	prereq 2994	picture 2994	desc 2994
 3084	title 3084	reward 3084	prereq 3084	picture 3084	desc 3084
@@ -290,7 +290,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 3423	title 3423	reward 3423	prereq 3423	picture 3423	desc 3423
 3476	title 3476	reward 3476	prereq 3476	picture 3476	desc 3476
 3581	title 3581	reward 3581	prereq 3581	picture 3581	desc 3581
-3656	title 3656	reward 3656	prereq 3656	picture 3656	desc 3656
+3656	Soaring Through the Spikes	Life Heart	20 Lightning uses, Dragon Form	picture 3656	Once you enter the Falls, fly upwards as if going to the Deadwood Graveyard. Once you reach the end of the room, don't proceed to the right and instead fly up and to the left. There is a secret passage that leads upwards. Flying to the left will have a maze of thorns that you'll need to navigate carefully; fall into the running water and you'll be sent back to the start. At the end of the maze is a door that leads to a spell chest. Use 20 charges of Lightning to open the chest.
 3704	title 3704	reward 3704	prereq 3704	picture 3704	desc 3704
 3757	title 3757	reward 3757	prereq 3757	picture 3757	desc 3757
 3865	title 3865	reward 3865	prereq 3865	picture 3865	desc 3865
@@ -307,7 +307,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 4600	title 4600	reward 4600	prereq 4600	picture 4600	desc 4600
 4704	title 4704	reward 4704	prereq 4704	picture 4704	desc 4704
 4716	title 4716	reward 4716	prereq 4716	picture 4716	desc 4716
-4811	title 4811	reward 4811	prereq 4811	picture 4811	desc 4811
+4811	Quick Shuffle Through the Parlor	Life Heart	Dragon Form, Dragon Talisman	picture 4811	In the main room of the Haunted Manor, fly up to the attic. There you'll find a statue that will turn into a dimensional portal when you use Dragon Form's Flamethrower attack. Once through the portal, quickly go to the bottom floor and possess the statue on the left. Move it out of the way to reveal a door that leads to the chest.
 4812	title 4812	reward 4812	prereq 4812	picture 4812	desc 4812
 2783	title 2783	reward 2783	prereq 2783	picture 2783	desc 2783
 2845	title 2845	reward 2845	prereq 2845	picture 2845	desc 2845
@@ -320,7 +320,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 3395	title 3395	reward 3395	prereq 3395	picture 3395	desc 3395
 3575	Secret Door with the Green Key	Fire Truffle	Pig Form	picture 3575	You can discover this door by using the pig's special sniffer ability. The key is found in a chest below, which then also brings you back to the door's location. Go through the locked door to find the truffle.
 3679	title 3679	reward 3679	prereq 3679	picture 3679	desc 3679
-3856	Though the Heavy Winds Blow	Fire Truffle	Heavy Boots, Snake Form, Any form that can use equipment	picture 3856	In the vertical room below, get to the top of the room and use Snake Form to climb to the ceiling. Continue onward until you reach the next room above. Jump on the lone platform, which will begin to rise as soon as you touch it. Plants will try to blow you off the platform; equip the heavy boots to ignore the wind until you reach the top. Once you're past the plants, unequip the boots and jump to reach the door that leads to the truffle.
+3856	Though the Heavy Winds Blow	Fire Truffle	Heavy Boots, Snake Form, Any form that can use equipment	picture 3856	In the vertical room below, use Snake Form to climb to the ceiling. Continue upward until you reach the next room above. Jump on the lone platform, which will begin to rise as soon as you touch it. Plants will try to blow you off the platform; equip the heavy boots to ignore the wind until you reach the top. Once you're past the plants, unequip the boots and jump to reach the door that leads to the truffle.
 4059	title 4059	reward 4059	prereq 4059	picture 4059	desc 4059
 4279	title 4279	reward 4279	prereq 4279	picture 4279	desc 4279
 4386	title 4386	reward 4386	prereq 4386	picture 4386	desc 4386
@@ -334,7 +334,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2874	Underwater Bombs for the Bomb Truffle	Bomb Truffle	Pig Form	picture 2874	Once you reach Pirate Shore, you'll enter a large open area. Head to the left until you encounter blocks that you can charge through in Lion Form. Don't break through the blocks, instead sink downward after finding them. You'll see a cracked wall to the left underwater, which can be broken open by using bombs with Pig Form. The room through the open wall will contain the truffle.
 2911	Your First Boomerang	Boomerang Truffle	Pig Form	picture 2911	On your initial visit to the Misty Woods, you'll enter a room where Pepelogoo is trapped, along with mushrooms trapped within cages. If you explore to the left, you'll notice smoke towards the left side of the tree trunk. Using Pig Forms Sniffer ability to reveal the door that leads to the truffle.
 2978	title 2978	reward 2978	prereq 2978	picture 2978	desc 2978
-3035	title 3035	reward 3035	prereq 3035	picture 3035	desc 3035
+3035	The Corked Well	Life Heart	Pig Form, Frog Form	picture 3035	This is a secret with multiple parts and intricate inner workings. You can complete this once you have Frog Form. There is an excellent guide that has already written on how to complete this series: https://www.neoseeker.com/monster-boy-and-the-cursed-kingdom/walkthrough/The_Corked_Well
 3086	title 3086	reward 3086	prereq 3086	picture 3086	desc 3086
 3151	title 3151	reward 3151	prereq 3151	picture 3151	desc 3151
 3180	title 3180	reward 3180	prereq 3180	picture 3180	desc 3180
