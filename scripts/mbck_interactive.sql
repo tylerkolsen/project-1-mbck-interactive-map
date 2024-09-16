@@ -234,8 +234,8 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2609	title 2609	reward 2609	prereq 2609	picture 2609	desc 2609
 2613	The Paired Pillars Problem	Fire Truffle	Pig Form, Frog Form	picture 2613	Entering the room to the left will greet you with two pillars and a slingshot in between them. Use the slingshot to reach the top of the right pillar, and then ground pound with the pig form. Continue ground pounding until you reveal the secret door that leads to the truffle.
 2625	Lupia Windmill Rooftop Escapades	Life Heart	Snake Form, 20 Fireballs or Dragon Form	picture 2625	After you obtain Snake Form you can reactivate the windmill in the Village of Lupia. This will restart the windmill, which you can use to reach the high platform to the left of the main windmill. To open the spell chest, you'll either need 20 charges of the Fireball spell, or Dragon Form.
-2626	title 2626	reward 2626	prereq 2626	picture 2626	desc 2626
-2631	title 2631	reward 2631	prereq 2631	picture 2631	desc 2631
+2626	There's a Snake in My Roof	Music Sheet	Snake Form	picture 2626	You'll need to reactivate the windmill by using Snake Form. Go inside of the windmill and climb up the mechanism on the right side. Once restarted, exit to the upper portion of the windmill and jump on one of the blades. This should take you to the roof where the music sheet is located.
+2631	Rooftop Sanctuary Music	Music Sheet	Lion Form, Lion Talisman or Dragon Form	picture 2631	On top of the Sanctuary in the Village of Lupia is the music sheet. You can either use the upward dash of Lion Form or flight from Dragon Form to reach it.
 2638	Royal Guard Rumble	Bomb Truffle	None	picture 2638	When you first gain access to the Castle of Lupia, you'll enter a long horizontal corridor filled with royal guards. At the end of the hallway is a blocked door. You'll need to defeat all of the guards in this corridor, which will open the door. Inside the door is the truffle.
 2644	title 2644	reward 2644	prereq 2644	picture 2644	desc 2644
 2660	title 2660	reward 2660	prereq 2660	picture 2660	desc 2660
@@ -248,7 +248,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2716	title 2716	reward 2716	prereq 2716	picture 2716	desc 2716
 2722	title 2722	reward 2722	prereq 2722	picture 2722	desc 2722
 2723	title 2723	reward 2723	prereq 2723	picture 2723	desc 2723
-2732	title 2732	reward 2732	prereq 2732	picture 2732	desc 2732
+2732	Chickens and Roads	Music Sheet	None	picture 2732	To the right of Ollie the main path slopes upward. Look for a chicken sticking out from the shrubbery. Strike the chicken with attacks until it gives the music sheet. If you're having trouble with this, wait until you have Lion Form so that you can charge through while damaging the chicken.
 2750	title 2750	reward 2750	prereq 2750	picture 2750	desc 2750
 2755	title 2755	reward 2755	prereq 2755	picture 2755	desc 2755
 2757	title 2757	reward 2757	prereq 2757	picture 2757	desc 2757
@@ -263,7 +263,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2914	title 2914	reward 2914	prereq 2914	picture 2914	desc 2914
 2979	title 2979	reward 2979	prereq 2979	picture 2979	desc 2979
 3382	Slingshot Through the Sewers	Bomb Truffle	Frog Form, Pig Form	picture 3382	Return down the path that you fell through after being turned into a pig by your uncle. You'll fall into water, where you can jump out to a platform that contains smoke. You can then use Pig Form's Sniffer ability to reveal the door that leads to the truffle. If you go too far down the waterway, you can get back up by using the slingshot as Frog Form, and then swim against the current.
-3478	title 3478	reward 3478	prereq 3478	picture 3478	desc 3478
+3478	Icky Slime Music	Music Sheet	None	picture 3478	Proceed through the sewers until you reach the portion that requires following the correct path. Make sure to follow the correct path until you reach a room with two mermen and a slime spawner. Defeat the slime spawner to spawn the music sheet.
 3661	Flying Through the Spiky Maze	Thunder Truffle	Dragon Form	picture 3661	When you first arrive at the falls, make your way towards the right by flying whenever the waterfalls are inactive. When you reach the end of the room, fly up to the left instead of going to the next map tile. You'll find a secret passage which leads to a new room above you. Make your way to the right. You'll need to dodge spikes and ice mosquitoes while not hitting the water current below. If you're having trouble, you can come back when you have the Dragon Talisman. The door at the end will lead to the truffle.
 3784	Nose Goes for the Ghost	Life Heart	Pig Form	picture 3784	Obtaining this Life Heart involves following a ghost through the sewers. There are three locations you'll need to uncover, each hiding the ghost using smoke. Using Pig Form's Sniffer ability will reveal the ghost and cause it to move to the next location. After the third reveal, the ghost will fly to the bottom of the sewers; remove the smoke that you find to reveal the chest.
 3968	Swimming with the Fishes	Boomerang Truffle	None	picture 3968	After finishing the Crystal Caves, you can enter the first portion of The Falls. Fall down to the water below, and defeat the three fish. Frog form will make this much easier. The wall to the right will open, leading to the room which contains the truffle.
