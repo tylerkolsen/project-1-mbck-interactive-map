@@ -38,6 +38,22 @@ const handlerFunctions = {
 
     },
 
+    sessionCheck:
+    async (req, res) => {
+        if (req.session.userId) {
+            res.send({
+                message: "user is still logged in",
+                success: true,
+                userId: req.session.userId
+            })
+        } else {
+            res.send({
+                message: "no user logged in",
+                success: false
+            })
+        }
+    },
+
     create: 
         async (req, res) => {
         const { email, password } = req.body
@@ -94,45 +110,6 @@ const handlerFunctions = {
         })
     },
 
-    addNote: 
-    async (req, res) => {
-        const { userId } = req.session
-        const { collectibleId, description } = req.body
-        await Note.create({
-            description,
-            userId,
-            collectibleId,
-        })
-        res.send({ 
-            message: "Note added successfully",
-            success: true 
-        })
-    },
-
-    history:
-    async (req, res) => {
-        const { userId } = req.session
-        const userHistory = await UsersCollectClick.findAll({
-            where: { userId },
-        })
-        res.send({
-            message: "history list gathered",
-            history: userHistory
-        })
-    },
-
-    deleteHistory:
-    async (req, res) => {
-        const { userId } = req.session
-        await UsersCollectClick.destroy({
-            where: { userId }
-        })
-        res.send({ 
-            message: "history deleted successfully",
-            success: true 
-        })
-    },
-
     notes:
     async (req, res) => {
         const { userId } = req.session
@@ -154,6 +131,21 @@ const handlerFunctions = {
         })
     },
 
+    addNote: 
+    async (req, res) => {
+        const { userId } = req.session
+        const { collectibleId, description } = req.body
+        await Note.create({
+            description,
+            userId,
+            collectibleId,
+        })
+        res.send({ 
+            message: "Note added successfully",
+            success: true 
+        })
+    },
+
     editNote:
     async (req, res) => {
         const { noteId, description } = req.body
@@ -169,20 +161,30 @@ const handlerFunctions = {
         })
     },
 
-    sessionCheck:
+    deleteNote:
     async (req, res) => {
-        if (req.session.userId) {
-            res.send({
-                message: "user is still logged in",
-                success: true,
-                userId: req.session.userId
-            })
-        } else {
-            res.send({
-                message: "no user logged in",
-                success: false
-            })
-        }
+        const { noteId } = req.params
+        console.log("hit deleteNote")
+        console.log(noteId)
+        await Note.destroy({
+            where: { noteId }
+        })
+        res.send({ 
+            message: "note deleted successfully",
+            success: true 
+        })
+    },
+
+    history:
+    async (req, res) => {
+        const { userId } = req.session
+        const userHistory = await UsersCollectClick.findAll({
+            where: { userId },
+        })
+        res.send({
+            message: "history list gathered",
+            history: userHistory
+        })
     },
 
     addHistory:
@@ -210,19 +212,18 @@ const handlerFunctions = {
         }
     },
 
-    deleteNote:
+    deleteHistory:
     async (req, res) => {
-        const { noteId } = req.params
-        console.log("hit deleteNote")
-        console.log(noteId)
-        await Note.destroy({
-            where: { noteId }
+        const { userId } = req.session
+        await UsersCollectClick.destroy({
+            where: { userId }
         })
         res.send({ 
-            message: "note deleted successfully",
+            message: "history deleted successfully",
             success: true 
         })
-    }
+    },
+
 }
 
 export default handlerFunctions
