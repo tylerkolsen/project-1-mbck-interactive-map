@@ -172,11 +172,11 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 236	title 236	reward 236	prereq 236	picture 236	desc 236
 285	title 285	reward 285	prereq 285	picture 285	desc 285
 321	title 321	reward 321	prereq 321	picture 321	desc 321
-333	title 333	reward 333	prereq 333	picture 333	desc 333
+333	Fire Serpent's Helpful Ride	Coin Chest	Ice Boots, Snake Form	picture 333	This room will have many challenges, but the chest itself is on the far left side. Continue throuhg until you find a fire serpent that flies back and forth slowly while rising upwards. Ride on the serpent using the Ice Boots until the serpent is lined up with the small gap on the right. Quickly switch to Snake Form to enter the tunnel and get the chest.
 432	title 432	reward 432	prereq 432	picture 432	desc 432
 434	title 434	reward 434	prereq 434	picture 434	desc 434
 435	title 435	reward 435	prereq 435	picture 435	desc 435
-437	title 437	reward 437	prereq 437	picture 437	desc 437
+437	Pepelogoo's Hint at Treasure	Coin Chest	None	picture 437	From the Volcanos main room with the professor, move upwards as far as possible, and then take the right exit. You'll come across a trapped Pepelogoo, which you'll need to free and follow. After completing the sequence you'll come into a large, open room with many fire serpents. Immediately after entering the room, double jump to the left to find the secret entrance to the chest.
 463	Bombs in the Sky	Life Heart	20 Bombs, Dragon Form	picture 463	Fly up to the top left of the Village of Aeria to find a spell chest above the Nurse's location. Use the 20 Bombs on the chest to unlock it.
 544	title 544	reward 544	prereq 544	picture 544	desc 544
 589	Cut Through the Darkness	Life Heart	Golden Sword	picture 589	After obtaining the Golden Sword, go left from the Fast Travel point and take the portal. Continue onward until you reach a split between left and right; go left and cut through the dark matter. You'll eventually drop into a room with a cyclops and two gem enemies. Defeating the cyclops will spawn the chest.
@@ -187,9 +187,9 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 668	title 668	reward 668	prereq 668	picture 668	desc 668
 696	title 696	reward 696	prereq 696	picture 696	desc 696
 732	title 732	reward 732	prereq 732	picture 732	desc 732
-743	title 743	reward 743	prereq 743	picture 743	desc 743
+743	Lava-Wrapped Treasure	Coin Chest	Ice Sword	picture 743	In the Volcano main room with the professor, head upwards until you reach two lava falls on either side of you. Use the Ice Sword to stop the flow of the left lava fall to find the chest.
 746	title 746	reward 746	prereq 746	picture 746	desc 746
-749	title 749	reward 749	prereq 749	picture 749	desc 749
+749	Enemy Arena in the Volcano	Coin Chest	Lion Form	picture 749	From the Volcano main room with the professor, head upwards until you reach the fire serpent. Exit to the right to go through a series of Lion Form charge puzzles. Once you enter the room that requires you to charge into blocks to move them, you're in the right place. Defeat all of the enemies in this long, horizontal room to have the chest appear.
 753	title 753	reward 753	prereq 753	picture 753	desc 753
 756	title 756	reward 756	prereq 756	picture 756	desc 756
 804	title 804	reward 804	prereq 804	picture 804	desc 804
@@ -199,7 +199,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 1054	Your Friendly Neighborhood Fireball	Music Sheet	Ice Sword with two upgrades, Snake Form	picture 1054	Starting in the main room with the professor, head through the bottom right exit. Continue until you reach the room with changing lava levels. Stand on the plaform in the center of the room to reach the door within the walled off area. Inside of the door will be a single fire enemy and the music sheet. First increase the size of the fire enemy through the fire sword or fireball attacks, and then freeze it when it's near the right wall. Use Snake Form to jump through the small tunnel to reach the music sheet
 1112	title 1112	reward 1112	prereq 1112	picture 1112	desc 1112
 1159	title 1159	reward 1159	prereq 1159	picture 1159	desc 1159
-1162	title 1162	reward 1162	prereq 1162	picture 1162	desc 1162
+1162	The Mosquito's Treasure	Coin Chest	Pig Form, Frog Form	picture 1162	After discovering the Fast Travel point, head upwards using the slingshot. Continue onward until you come to the vertical room with many mosquitos. At the top right corner will be a patch of smoke, which can be revealed using Pig Form's Sniffer ability.
 1255	title 1255	reward 1255	prereq 1255	picture 1255	desc 1255
 1356	title 1356	reward 1356	prereq 1356	picture 1356	desc 1356
 1362	Bomb Block Blockade	Music Sheet	None	picture 1362	Travel two rooms to the left of the Fast Travel point. You'll see some blocks with the bomb symbol on them, along with a bomb thrower enemy. Get close enough to the enemy to have them begin throwing bombs, which should clear out the bottom right corner and reveal the music sheet.
@@ -214,14 +214,14 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2127	title 2127	reward 2127	prereq 2127	picture 2127	desc 2127
 2174	title 2174	reward 2174	prereq 2174	picture 2174	desc 2174
 2187	title 2187	reward 2187	prereq 2187	picture 2187	desc 2187
-2194	title 2194	reward 2194	prereq 2194	picture 2194	desc 2194
+2194	Hidden Treasure in the Temple	Coin Chest	Pig Form, Snake Form	picture 2194	When you first enter the Lost Temples, you'll be tasked with finding a key for the professor. After finding the key, enter the door and proceed until you come to the room where you must hit levers in a specific order. This will require Snake Form's Poison Spit. Complete this puzzle and go through the door, which will take you to a side room. Go to the smoke in the center of the room and reveal the chest using Pig Form's Sniffer ability.
 2227	Bouncing the Guard	Life Heart	Morning Star with the first upgrade, Cloud Boots	picture 2227	When you reach the outside section of the castle with wind currents, ride the first section to the lower right corner. Unequip the Cloud Boots to reach the lever. Flipping the lever will cause the currents to connect to a door in the bottom left. Enter the door to find the chest behind a gate requiring a cog. Attack the floor with the morningstar to bounce the guard upward toward you. After a few bounces you can defeat the guard, who drops a cog. Use the cog to open the gate and access the chest.
 2269	Breaking Down the Walls	Life Heart	Lion Form	picture 2269	After defeating the boss of the Lost Temples, you'll proceed through a long horizontal corridor. Keep moving forward until you find a section in the background with two doors. Transition to the background using the a spring, and then enter either door. Charge either wall to break through to the lower portion of the room which contains the chest.
 2283	Bat Cleanup after the Giant Boulder	Thunder Truffle	None	picture 2283	After surviving being chased by the Giant Boulder, head back to the long horizontal room with spikes continually going up and down. In the center of the hallway is a barred door. Defeating the three bats in the room will open the door, allowing you to collect the Thunder Truffle.
 2372	title 2372	reward 2372	prereq 2372	picture 2372	desc 2372
 2374	title 2374	reward 2374	prereq 2374	picture 2374	desc 2374
 2375	Rumble in the Temple	Music Sheet	None	picture 2375	After defeating the boss of the Lost Temples, you'll come across a large horizontal corridor. The first portion of this corridor outside will have a group of enemies, including dragonflies and bomb throwers. Defeat them all to spawn a spring that will launch you to the background. Go to the right to collect the music sheet.
-2376	title 2376	reward 2376	prereq 2376	picture 2376	desc 2376
+2376	Digging Down for Treasure	Coin Chest	Lion Form	picture 2376	After defeating the Lost Temples Boss, continue onward until you reach the long horizontal corridor. You'll need to charge through some pillars of blocks. Stop at the second column of blocks to see the column continue into the ground. Use the downward charge to break through and reveal the chest.
 2384	title 2384	reward 2384	prereq 2384	picture 2384	desc 2384
 2491	title 2491	reward 2491	prereq 2491	picture 2491	desc 2491
 2494	Ground Pound Jump to Glory	Thunder Truffle	Pig Form	picture 2494	After meeting with Foximus' wife Ginger, you'll be introduced to a giant tree. If you climb one tile above, you'll notice an opening to your left. Leave to the next tile to find a bat hovering in place. Ground pound the bat to gain extra jump distance. You'll need to land on the door to the left, which is above the magic shop.
@@ -230,7 +230,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2539	title 2539	reward 2539	prereq 2539	picture 2539	desc 2539
 2541	title 2541	reward 2541	prereq 2541	picture 2541	desc 2541
 2563	title 2563	reward 2563	prereq 2563	picture 2563	desc 2563
-2591	title 2591	reward 2591	prereq 2591	picture 2591	desc 2591
+2591	Karma for the Chameleons	Coin Chest	None	picture 2591	Within the room containing this chest will be many Chameleon enemies. Defeat all of them to cause the chest to apepar. The easiest method to defeat them is to reflect their projectiles with a shield that has physical reflect.
 2609	title 2609	reward 2609	prereq 2609	picture 2609	desc 2609
 2613	The Paired Pillars Problem	Fire Truffle	Pig Form, Frog Form	picture 2613	Entering the room to the left will greet you with two pillars and a slingshot in between them. Use the slingshot to reach the top of the right pillar, and then ground pound with the pig form. Continue ground pounding until you reveal the secret door that leads to the truffle.
 2625	Lupia Windmill Rooftop Escapades	Life Heart	Snake Form, 20 Fireballs or Dragon Form	picture 2625	After you obtain Snake Form you can reactivate the windmill in the Village of Lupia. This will restart the windmill, which you can use to reach the high platform to the left of the main windmill. To open the spell chest, you'll either need 20 charges of the Fireball spell, or Dragon Form.
@@ -250,15 +250,15 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2723	title 2723	reward 2723	prereq 2723	picture 2723	desc 2723
 2732	Chickens and Roads	Music Sheet	None	picture 2732	To the right of Ollie the main path slopes upward. Look for a chicken sticking out from the shrubbery. Strike the chicken with attacks until it gives the music sheet. If you're having trouble with this, wait until you have Lion Form so that you can charge through while damaging the chicken.
 2750	title 2750	reward 2750	prereq 2750	picture 2750	desc 2750
-2755	title 2755	reward 2755	prereq 2755	picture 2755	desc 2755
+2755	Water Jump to the Secret Alcove	Coin Chest	None	picture 2755	After the signpost, continue to the right until you come to a ladder. Slide down into the water and jump to the left through the false wall.
 2757	title 2757	reward 2757	prereq 2757	picture 2757	desc 2757
 2759	Introduction to Magic	Fire Truffle	None	picture 2759	As part of the main story you'll run into a vine blocking your path. Your uncle then appears, spawning crabs for you to fight. Defeat the crabs, and Pepelogoo will hand over the truffle.
-2760	title 2760	reward 2760	prereq 2760	picture 2760	desc 2760
-2762	title 2762	reward 2762	prereq 2762	picture 2762	desc 2762
+2760	Through the Tangled Vines	Coin Chest	Fireball Magic	picture 2760	Staying above the water, reach the lever on the highest platform using the moving platforms nearby. Hit the switch to retract the wall, and use 3 fireballs to remove the vines in your way. Going through the door will lead you to the background, which will have the chest to the right.
+2762	The Magic Shop Secret	Coin Chest	Fireball Magic	picture 2762	Go to the area with the magic shop, and jump to the roof above it. Shoot a fireball to the left to make a wooden platform appear. Jump to this platform to cause the next platform to appear, which also has the chest.
 2764	title 2764	reward 2764	prereq 2764	picture 2764	desc 2764
 2772	Water Run Race	Music Sheet	Lion Form	picture 2772	To the left of the big save point in Pirate Shore is a button. Ground pound the button to reveal a gold coin trail that goes to the left. Dash after the coins, eventually jumping when reaching the end of a piece of ship. Land on the island with cannonballs, and the music sheet should spawn on the wooden platform to the left.
-2827	title 2827	reward 2827	prereq 2827	picture 2827	desc 2827
-2864	title 2864	reward 2864	prereq 2864	picture 2864	desc 2864
+2827	Secret Water Cave Stroll	Coin Chest	None	picture 2827	When you first enter Green Fields on the left side, you'll notice a small pond in front of a sunflower enemy. Sink into the pond and move to the right, which will take you to a secret area under the bridge. The chest will be located near the bottom of the room.
+2864	Underwater Jaunt	Coin Chest	None	picture 2864	Above the water, you want to look for the spot that has three vines to burn through to a door. Sink down on the right side, and then move left past some squids. You should see the chest.
 2875	title 2875	reward 2875	prereq 2875	picture 2875	desc 2875
 2914	title 2914	reward 2914	prereq 2914	picture 2914	desc 2914
 2979	title 2979	reward 2979	prereq 2979	picture 2979	desc 2979
@@ -269,11 +269,11 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 3968	Swimming with the Fishes	Boomerang Truffle	None	picture 3968	After finishing the Crystal Caves, you can enter the first portion of The Falls. Fall down to the water below, and defeat the three fish. Frog form will make this much easier. The wall to the right will open, leading to the room which contains the truffle.
 4268	Melting Through with the Crimson Boots	Life Heart	Crimson Boots, Snake Form, Snake Talisman, Form that can use equipment	picture 4268	The room above should have destructible blocks attached to moss. Use Snake Form to charge through the blocks. You'll enter a room with a chest underneath a layer of ice blocks; equip the Crimson Boots and melt the ice blocks by standing on them.
 4369	Timed Underwater Traversal	Life Heart	Snake Form	picture 4369	This room will have a normal save point, a slingshot on the right, and some water below. Use Snake Form's Poison Spit ability to light up the crystal, which will lower the wall with moss. Descend through the water and then rise back up in time, and then jump on the wall moss as Snake Form. Wait for the timer to run out, which will raise the wall back up and allow access to the chest
-4402	title 4402	reward 4402	prereq 4402	picture 4402	desc 4402
+4402	Topsy-Turvy Arena	Coin Chest	None	picture 4402	From the main room in Haunted Manor, head to the top right exit. THe room will be disorienting due to being upside down. Defeat all of the ghosts and skeletons in the room to cause the chest to appear.
 4500	title 4500	reward 4500	prereq 4500	picture 4500	desc 4500
 4609	Possession Relay	Music Sheet	Snake Form	picture 4609	From the main room in Haunted Manor, go through the second from the bottom door. Once inside, use the dimensional portal to possess the chandelier. You'll need to move it up as high as possible to connect with the small tunnel. Next, go through the dimensional portal again, reach the chandelier, and then turn to Snake Form to go through the tunnel. Possess the spiked ball and drop it to the ground to the right. Jump with the ball to overcome the lip on the right, and then continue to roll into the bottom right corner to reveal the music sheet.
 4719	title 4719	reward 4719	prereq 4719	picture 4719	desc 4719
-4815	title 4815	reward 4815	prereq 4815	picture 4815	desc 4815
+4815	Getting That Sinking Feeling	Coin Chest	None	picture 4815	After entering Haunted Manor, head down the hole to the right. You'll eventually come to a giant pit of mud. Sink into the mud and head right until you find a dimensional portal. Use the portal to move freely, and then head down and to the right. Follow the path to the left to find the chest.
 2798	Climb the Crowded Vine	Tornado Truffle	None	picture 2798	When entering the room below this truffle, you'll see a group of mushroom enemies and a vine in the center. Climb the vine upward until you reach the room with the truffle.
 2823	Below the Mosquito	Thunder Truffle	Pig Form	picture 2823	The tile above includes a mosquito that you'll need to ground pound to reach the other side. Instead of moving on, fall into the pit below. You'll find smoke on the left side of the pit, which will reveal a secret door when using Pig Form's sniffer ability.
 2858	title 2858	reward 2858	prereq 2858	picture 2858	desc 2858
@@ -283,7 +283,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2994	title 2994	reward 2994	prereq 2994	picture 2994	desc 2994
 3084	title 3084	reward 3084	prereq 3084	picture 3084	desc 3084
 3148	title 3148	reward 3148	prereq 3148	picture 3148	desc 3148
-3165	title 3165	reward 3165	prereq 3165	picture 3165	desc 3165
+3165	Slingshot Maze in the Sewers	Coin Chest	Frog Form	picture 3165	In the Sewers, go to the vertical room with the long ladder. Climb upwards and take the exit at the top. Use the slingshot to shoot into a new room. Ignore the door and proceed down the back and forth hallways until you reach the chest at the bottom.
 3216	Sniff the Secret Staircase	Tornado Truffle	Pig Form	picture 3216	While moving downward through the Misty Woods from Foximus' home, you'll come to a vertical section. You'll spot some smoke, which can be revealed using Pig Form's Sniffer ability. A lever will appear, which when struck will bring out a staircase that leads up to the door containing the truffle.
 3327	Torch Trouble for a Boomerang Truffle	Boomerang Truffle	Pig Form	picture 3327	The room below the truffle will be a darkened room with spikes and small, moving platforms. When you first enter the room, you'll notice a door in the upper left corner that you can't reach. If you continue to the right, you'll find an unlit torch. Light it with a fire spell to reveal a platform to the left. Jump onto this platform to be brought to the door that contains the truffle.
 3353	A Shocking Display of Platforming	Music Sheet	Snake Form, Lightning	picture 3353	In the Sewers there is a room where you'll need to burn the ropes from 3 crates in order to open the way forward. On the right side of the room is a snake hole. This will lead you to a platforming challenge. Use lightning on the two platforms on the left, and then quickly on the platform on the right. Turn into Snake Form to crawl on the moss, jumping across the gaps until you reach the underside of the topmost platform on the left. Wait for this platform to reset, which will allow you to reach the music sheet.
@@ -299,10 +299,10 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 4260	Lighting the Way to the Boomerang Truffle	Boomerang Truffle	Snake Form	picture 4260	As you work your way through the crystal caves, you'll encounter a room that is pitch black. There are four crystals to light using the Snake Form's Poison Spit ability. The first crystal is the middle of the room on a platform, the second is by the entrance, the third is on the right, and the last one is on the ceiling. Once all four have activated, the door leading to the truffle will appear.
 4282	The Graves Mark the Way	Tornado Truffle	None	picture 4282	Deadwood Graveyard consists of one long horizontal stretch, which will have a barred door in the middle. You'll need to locate two gravestones on the path and break them. Once both are broken, the door will open and the truffle will be inside.
 4355	title 4355	reward 4355	prereq 4355	picture 4355	desc 4355
-4394	title 4394	reward 4394	prereq 4394	picture 4394	desc 4394
+4394	Keep Your Feet On the Table	Coin Chest	Snake Form	picture 4394	Take the top left exit from the reading room in the Haunted Manor. Once inside, use the dimensional portal to possess the table. Fly to the gap at the top of the room and leave the table there. Hop onto the table, transform to Snake Form and pass through the gap to the chest.
 4398	title 4398	reward 4398	prereq 4398	picture 4398	desc 4398
 4484	title 4484	reward 4484	prereq 4484	picture 4484	desc 4484
-4499	title 4499	reward 4499	prereq 4499	picture 4499	desc 4499
+4499	Reading is it's own Reward	Coin Chest	None	picture 4499	Head to the large room on the left of the Haunted Manor, which has many floating books. You'll find the chest at the top right of the room.
 4572	Sliding Through the False Wall	Music Sheet	None	picture 4572	The room with this music sheet contains a slide with icy slopes. When you reach the second icy slope that leads to the right, jump at the very end to move through the false wall and reach the music sheet.
 4600	Piano Pickle	Music Sheet	None	picture 4600	The left side of Haunted Manor has a large room filled with floating books and books on pedestals. You'll need to use the dimensional portal in order to interact with the pedestals. Once you've interacted with the 4 pedestals in the room, you'll need to go through a dimensional portal again and rush to the bottom left exit. Possess the piano to enter inside, and hit the far right lever to begin the song. Make sure to hit each hammer in the piano when it corresponds to the symbol on the music scroll. Once you finish the song the door to the music sheet will open. If you're having issues with reaching the piano in time, you can wait until you have the Dragon Talisman, which will allow you to turn a nearby statue to the right into a dimensional portal.
 4704	title 4704	reward 4704	prereq 4704	picture 4704	desc 4704
@@ -312,19 +312,19 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2783	title 2783	reward 2783	prereq 2783	picture 2783	desc 2783
 2845	Secret of the Drawbridge	Music Sheet	None	picture 2845	In the Castle of Lupia region, the first room you'll enter is a long horizontal corridor with many royal guards. Traverse all the way to the right. Fall down the area where the drawbridge would be if down to find an area that contains the music sheet. If the drawbridge is down, you'll need to raise it again to reach this music sheet by using the lever on the right side of the area.
 2865	title 2865	reward 2865	prereq 2865	picture 2865	desc 2865
-2903	title 2903	reward 2903	prereq 2903	picture 2903	desc 2903
+2903	Boomerang Bust the Secret Chest	Coin Chest	Pig Form, Boomerang Magic	picture 2903	As you begin your travels through Misty Woods, you'll pass the blacksmith. Continue left until you hit an area with wood and lily pads over poisoned water. Follow the path until you come to an island, which will have smoke in the center. Use Pig Form's Sniffer ability to reveal a spell chest. Use one boomerang to unlock it for your reward.
 2930	Hidden Water Tunnel Current	Music Sheet	Frog Form	picture 2930	Near the beginning of Green Fields on the right side, you'll find a small pond in front of a sunflower enemy. Drop into the water and sink down to find an underwater passage. Move right to find a secret area under the bridge. There is a coin chest here, but at the bottom you'll find a slingshot and a water current blocking the music sheet. Use Frog Form to traverse past the current to get the music sheet.
 2983	title 2983	reward 2983	prereq 2983	picture 2983	desc 2983
 3051	title 3051	reward 3051	prereq 3051	picture 3051	desc 3051
 3144	title 3144	reward 3144	prereq 3144	picture 3144	desc 3144
-3395	title 3395	reward 3395	prereq 3395	picture 3395	desc 3395
+3395	Go with the Flow Pt. 1	Coin Chest	None	picture 3395	After going through the underwater portion of Pirate Shore, you'll find yourself going upwards through currents. At the first junction of currents, the right side current will take you to the chest.
 3575	Secret Door with the Green Key	Fire Truffle	Pig Form	picture 3575	You can discover this door by using the pig's special sniffer ability. The key is found in a chest below, which then also brings you back to the door's location. Go through the locked door to find the truffle.
 3679	title 3679	reward 3679	prereq 3679	picture 3679	desc 3679
 3856	Though the Heavy Winds Blow	Fire Truffle	Heavy Boots, Snake Form, Any form that can use equipment	picture 3856	In the vertical room below, use Snake Form to climb to the ceiling. Continue upward until you reach the next room above. Jump on the lone platform, which will begin to rise as soon as you touch it. Plants will try to blow you off the platform; equip the heavy boots to ignore the wind until you reach the top. Once you're past the plants, unequip the boots and jump to reach the door that leads to the truffle.
 4059	title 4059	reward 4059	prereq 4059	picture 4059	desc 4059
 4279	title 4279	reward 4279	prereq 4279	picture 4279	desc 4279
 4386	title 4386	reward 4386	prereq 4386	picture 4386	desc 4386
-4405	title 4405	reward 4405	prereq 4405	picture 4405	desc 4405
+4405	Hidden Chest in Haunted Courtyard	Coin Chest	None	picture 4405	In the outside area to the right of Haunted Manor, head upwards and to the left. In the corner will be a chest slightly hidden by some trees.
 4501	title 4501	reward 4501	prereq 4501	picture 4501	desc 4501
 4610	title 4610	reward 4610	prereq 4610	picture 4610	desc 4610
 4807	Using the Floating Table as a Floor	Bomb Truffle	None	picture 4807	After entering the Haunted Mansion, head left and go into the hole in the floor. You'll enter a long horizontal corridor with a dimensional portal. Use the portal to possess the table within the hallway, and float the table to just under the doorway to the left. This will allow you to enter the door, which contains the truffle.
@@ -335,13 +335,13 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2911	Your First Boomerang	Boomerang Truffle	Pig Form	picture 2911	On your initial visit to the Misty Woods, you'll enter a room where Pepelogoo is trapped, along with mushrooms trapped within cages. If you explore to the left, you'll notice smoke towards the left side of the tree trunk. Using Pig Forms Sniffer ability to reveal the door that leads to the truffle.
 2978	Slithering Against the Current	Music Sheet	Snake Form	picture 2978	As part of your adventures in Pirate Shore, you'll need to find ingredients for Delicious Pork Stew. Obtaining the turnip will require going underwater in the second section of water from the left. Conveniently, this area also contains the music sheet that you're after. After diving underwater, you'll come across a region with tiny tunnels, moss, and water currents. You'll need to use snake form to traverse this area, making sure to keep track of your oxygen as you can't transform while in these tiny tunnels. Follow the first current, and then head downward to hit the lever. Head back up and take the current again, which will now direct you to the left. Hit the next lever you find, grab an air bubble and then head downward to strike another lever. Ascend back to the beginning and go through the current again, which should now be directed to the bottom right with the music sheet.
 3035	The Corked Well	Life Heart	Pig Form, Frog Form	picture 3035	This is a secret with multiple parts and intricate inner workings. You can complete this once you have Frog Form. There is an excellent guide that has already written on how to complete this series: https://www.neoseeker.com/monster-boy-and-the-cursed-kingdom/walkthrough/The_Corked_Well
-3086	title 3086	reward 3086	prereq 3086	picture 3086	desc 3086
+3086	Go With the Flow Pt. 2	Coin Chest	Frog Form	picture 3086	When in the ascending portion of Pirate Shore with the currents, move upward until you see two different slingshots that you can latch onto. Use the first slingshot to land in the currents that lead to the chest.
 3151	title 3151	reward 3151	prereq 3151	picture 3151	desc 3151
 3180	title 3180	reward 3180	prereq 3180	picture 3180	desc 3180
 3290	title 3290	reward 3290	prereq 3290	picture 3290	desc 3290
 3332	Big Venom's Music Hoard	Music Sheet	Snake Form	picture 3332	After defeating Big Venom, use your new Snake Form to enter the tunnels the boss utilized. Crawl through the snake hole on the lower left, making sure to time the upper platform being aligned to the right-side hole. Ride the platform to the other side and enter that snake hole to find the music sheet.
 3426	title 3426	reward 3426	prereq 3426	picture 3426	desc 3426
-3653	title 3653	reward 3653	prereq 3653	picture 3653	desc 3653
+3653	Deceptive Crystal Chest from Above	Coin Chest	Frog Form	picture 3653	You'll come across a room that has a rope bridge that requires Snake Form to cross. There is a slingshot hidden in the center of ceiling of this room. You'll need to jump out and aim Frog Form's tongue upwards in order to connect with the slingshot.
 3756	title 3756	reward 3756	prereq 3756	picture 3756	desc 3756
 3960	title 3960	reward 3960	prereq 3960	picture 3960	desc 3960
 4164	Tricky Crystal Platforms	Music Sheet	Snake Form	picture 4164	In the long vertical room filled with moss-covered platforms, there will be three crystals that you can light up with Snake Form's Poison Spit. Light up all three in order to have the music sheet appear at the top of the room.
