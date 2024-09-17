@@ -202,7 +202,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 1162	title 1162	reward 1162	prereq 1162	picture 1162	desc 1162
 1255	title 1255	reward 1255	prereq 1255	picture 1255	desc 1255
 1356	title 1356	reward 1356	prereq 1356	picture 1356	desc 1356
-1362	title 1362	reward 1362	prereq 1362	picture 1362	desc 1362
+1362	Bomb Block Blockade	Music Sheet	None	picture 1362	Travel two rooms to the left of the Fast Travel point. You'll see some blocks with the bomb symbol on them, along with a bomb thrower enemy. Get close enough to the enemy to have them begin throwing bombs, which should clear out the bottom right corner and reveal the music sheet.
 1366	Boomerang to Victory above the Waterfall	Life Heart	4 Boomerangs 	picture 1366	Using the Fast Travel point as reference, go right one screen to the top of the waterfall. Continue heading right and pass through the false wall. This will reveal a spell chest, which requires 4 uses of Boomerang to open.
 1675	Ice Stairway to Heaven	Tornado Truffle	Ice Sword, Form that can use equipment	picture 1675	After you receive the Ice Sword from the professor, you'll come across a waterfall. Instead of only crossing the waterfall using the Ice Sword, instead climb upwards by building a stairway. The room above the waterfall contains the truffle.
 1771	title 1771	reward 1771	prereq 1771	picture 1771	desc 1771
@@ -220,7 +220,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2283	Bat Cleanup after the Giant Boulder	Thunder Truffle	None	picture 2283	After surviving being chased by the Giant Boulder, head back to the long horizontal room with spikes continually going up and down. In the center of the hallway is a barred door. Defeating the three bats in the room will open the door, allowing you to collect the Thunder Truffle.
 2372	title 2372	reward 2372	prereq 2372	picture 2372	desc 2372
 2374	title 2374	reward 2374	prereq 2374	picture 2374	desc 2374
-2375	title 2375	reward 2375	prereq 2375	picture 2375	desc 2375
+2375	Rumble in the Temple	Music Sheet	None	picture 2375	After defeating the boss of the Lost Temples, you'll come across a large horizontal corridor. The first portion of this corridor outside will have a group of enemies, including dragonflies and bomb throwers. Defeat them all to spawn a spring that will launch you to the background. Go to the right to collect the music sheet.
 2376	title 2376	reward 2376	prereq 2376	picture 2376	desc 2376
 2384	title 2384	reward 2384	prereq 2384	picture 2384	desc 2384
 2491	title 2491	reward 2491	prereq 2491	picture 2491	desc 2491
@@ -256,7 +256,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 2760	title 2760	reward 2760	prereq 2760	picture 2760	desc 2760
 2762	title 2762	reward 2762	prereq 2762	picture 2762	desc 2762
 2764	title 2764	reward 2764	prereq 2764	picture 2764	desc 2764
-2772	title 2772	reward 2772	prereq 2772	picture 2772	desc 2772
+2772	Water Run Race	Music Sheet	Lion Form	picture 2772	To the left of the big save point in Pirate Shore is a button. Ground pound the button to reveal a gold coin trail that goes to the left. Dash after the coins, eventually jumping when reaching the end of a piece of ship. Land on the island with cannonballs, and the music sheet should spawn on the wooden platform to the left.
 2827	title 2827	reward 2827	prereq 2827	picture 2827	desc 2827
 2864	title 2864	reward 2864	prereq 2864	picture 2864	desc 2864
 2875	title 2875	reward 2875	prereq 2875	picture 2875	desc 2875
@@ -350,6 +350,7 @@ COPY public.collectibles (collectible_id, title, reward, prerequisites, picture,
 4497	title 4497	reward 4497	prereq 4497	picture 4497	desc 4497
 4613	Focus on the Telescope	Thunder Truffle	Dragon Form, Pepelogoo	picture 4613	Trying to fire Pepelogoo's beam at the bulb above entrance to this room won't work. Instead, you'll need to go back inside the manor. In the large room on the right, you'll find a telescope pointing to the right. You'll need to possess it using one of the dimensional portals. Once inside, proceed to fly into each section and reach the ceiling. There will be one lever per section for a total of two that you'll need to flip to lower the lenses into position. Once both of them are flipped, head back to the start of the telescope and aim Pepelogoo's beam through the first lense. This will allow the laser to open the door that leads to the Thunder Truffle
 4810	title 4810	reward 4810	prereq 4810	picture 4810	desc 4810
+2863	Crabbing Around with Music	Music Sheet	None	picture 2863	You can obtain this music sheet at the beginning of the game if you have the Heavy Boots. Find the above water location that has multiple floating crates, and then sink into the water. Move to the right, defeating or ignoring the enemies until you reach the music sheet. It should be near a green crab.
 \.
 
 

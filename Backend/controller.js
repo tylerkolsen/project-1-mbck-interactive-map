@@ -150,7 +150,6 @@ const handlerFunctions = {
     async (req, res) => {
         const { noteId, description } = req.body
         let noteToEdit = await Note.findByPk(noteId)
-        console.log(noteToEdit)
         await noteToEdit.update({
             description
         })
@@ -164,8 +163,6 @@ const handlerFunctions = {
     deleteNote:
     async (req, res) => {
         const { noteId } = req.params
-        console.log("hit deleteNote")
-        console.log(noteId)
         await Note.destroy({
             where: { noteId }
         })
