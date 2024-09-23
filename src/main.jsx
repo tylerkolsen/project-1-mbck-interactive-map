@@ -10,7 +10,7 @@ import UserNotes from './pages/UserNotes.jsx'
 import GoogleCalendar from './pages/GoogleCalendar.jsx'
 import { Provider } from 'react-redux'
 import store from './assets/redux/store.js'
-import GoogleLoginButton from './pages/GoogleLoginButton.jsx'
+import SearchBar from './pages/SearchBar.jsx'
 
 const router = createBrowserRouter(
 createRoutesFromElements(
@@ -31,6 +31,10 @@ createRoutesFromElements(
     <Route
       path='/Calendar'
       element={<GoogleCalendar />}
+    />
+    <Route
+      path='/Search'
+      element={<SearchBar />}
     />
   </Route>
 )

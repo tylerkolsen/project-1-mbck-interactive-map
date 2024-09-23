@@ -26,7 +26,7 @@ function CollectModal({ setDisplayModal }) {
     <div
         id="modalDiv" 
         onClick={(e) => handleModalChange(e)}
-        className="absolute z-10 w-[100vw] h-[94vh] flex bg-gray-500/50 items-center justify-center">
+        className="absolute z-10 w-[100vw] h-[94vh] snap-center flex bg-gray-500/50 items-center justify-center">
         <div 
             className="flex flex-col w-[25vw] h-[70vh] bg-white rounded-md shadow-md justify-between overflow-auto border-black border-[2px]">
             {/* <button 

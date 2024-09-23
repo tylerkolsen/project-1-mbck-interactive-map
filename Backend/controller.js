@@ -1,6 +1,6 @@
 import { User, Collectible, UsersCollectClick, Note } from '../src/model.js'
 import bcryptjs from 'bcryptjs'
-import { Sequelize } from 'sequelize'
+import { Op, Sequelize } from 'sequelize'
 import axios from 'axios'
 
 const sequelize = new Sequelize('postgresql:///mbck_interactive')
@@ -257,10 +257,70 @@ const handlerFunctions = {
             console.error('error fetching calendar data:', error)
             res.status(500).json({ error: 'Failed to fetch calendar data'})
         }
+    },
 
+    search: 
+    async (req, res) => {
+        const { query, columnType } = req.body
 
+        if (columnType === "all") {
+            try {
+                const searchResultsAll = await Collectible.findAll({
+                    where: {
+                       [Op.or] : { 
+                            title: {[Op.iLike]: `%${query}%`},
+                            reward: {[Op.iLike]: `%${query}%`},
+                            prerequisites: {[Op.iLike]: `%${query}%`},
+                            description: {[Op.iLike]: `%${query}%`},
+                    }
+                    }, 
+                    order: ['title']
+                })
+                searchResultsAll.length ? 
+                res.send({
+                    message: 'search complete',
+                    success: true,
+                    searchResults: searchResultsAll
+                })
+                : res.send({
+                    message: 'No results found.',
+                    success: false,
+                })
+            } catch (error) {
+                console.error('error with search functionality', error)
+                res.send({
+                    message: `search failed: ${error}`,
+                    success: false
+                })
+            }
+
+        } else {
+            try {
+                const searchResults = await Collectible.findAll({
+                    where: {
+                        [columnType]: { [Op.iLike]: `%${query}%`}
+                    },
+                    order: ['title']
+                })
+                searchResults.length ? 
+                res.send({
+                    message: 'search complete',
+                    success: true,
+                    searchResults
+                })
+                : res.send({
+                    message: 'No results found.',
+                    success: false,
+                })
+            } catch (error) {
+                console.error('error with search functionality', error)
+                res.send({
+                    message: `search failed: ${error}`,
+                    success: false
+                })
+            }
+        }
     }
-
 }
 
 export default handlerFunctions

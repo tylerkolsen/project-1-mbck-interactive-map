@@ -89,4 +89,9 @@ app.delete('/api/deleteHistory', loginRequired, handlerFunctions.deleteHistory)
 // POST request, as the access token is private information
 app.post('/api/googleCalendar', loginRequired, handlerFunctions.googleCalendar)
 
+// route for using the search bar functionality
+// will have a written search portion, along with a dropdown bar to specify which column within the database to search by
+// POST request, as it's sending search information to the database
+app.post('/api/search', loginRequired, handlerFunctions.search)
+
 ViteExpress.listen(app, port, () => console.log(`Server is listening on http://localhost:${port}`))
