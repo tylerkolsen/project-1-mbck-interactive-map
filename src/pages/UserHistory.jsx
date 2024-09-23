@@ -20,7 +20,7 @@ const UserHistory = () => {
                 id={his.usersCollectClickId}
                 onClick={() => handleCollect(his.collectibleId, setDisplayModal, dispatch)}
                 className="cursor-pointer text-blue-700 underline"
-            >Collectible {his.collectibleId}</li>
+            >{his.collectible.title}</li>
         )
     })
 

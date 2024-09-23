@@ -1,6 +1,7 @@
 import { User, Collectible, UsersCollectClick, Note } from '../src/model.js'
 import bcryptjs from 'bcryptjs'
 import { Sequelize } from 'sequelize'
+import axios from 'axios'
 
 const sequelize = new Sequelize('postgresql:///mbck_interactive')
 
@@ -177,6 +178,10 @@ const handlerFunctions = {
         const { userId } = req.session
         const userHistory = await UsersCollectClick.findAll({
             where: { userId },
+            include: [{
+                model: Collectible,
+                attributes: ['title'],
+            }], 
         })
         res.send({
             message: "history list gathered",
@@ -220,6 +225,41 @@ const handlerFunctions = {
             success: true 
         })
     },
+
+    googleCalendar:
+    async (req, res) => {
+        const { accessToken } = req.body
+        let calendarData = {}
+
+        const date = new Date()
+        const rfc339 = date.toISOString()
+
+        try {
+            axios.get(`https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=${rfc339}`, {
+                headers: {
+                    Authorization: `Bearer ${accessToken}`, // this passes the access token to the API
+                    'Content-Type': 'application/json'
+                }
+            }
+
+            )
+                .then((response) => {
+                    console.log(response.data)
+                    calendarData = response.data
+                    res.send({
+                        message: "calendar data retrieved",
+                        calendarData,
+                        success: true,
+                    })
+                })
+            
+        } catch (error) {
+            console.error('error fetching calendar data:', error)
+            res.status(500).json({ error: 'Failed to fetch calendar data'})
+        }
+
+
+    }
 
 }
 

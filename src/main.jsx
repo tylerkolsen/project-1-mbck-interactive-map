@@ -7,8 +7,10 @@ import Landing from './pages/Landing.jsx'
 import InteractiveTable from './pages/InteractiveTable.jsx'
 import UserHistory from './pages/UserHistory.jsx'
 import UserNotes from './pages/UserNotes.jsx'
+import GoogleCalendar from './pages/GoogleCalendar.jsx'
 import { Provider } from 'react-redux'
 import store from './assets/redux/store.js'
+import GoogleLoginButton from './pages/GoogleLoginButton.jsx'
 
 const router = createBrowserRouter(
 createRoutesFromElements(
@@ -25,6 +27,10 @@ createRoutesFromElements(
     <Route
       path='/Note'
       element={<UserNotes />}
+    />
+    <Route
+      path='/Calendar'
+      element={<GoogleCalendar />}
     />
   </Route>
 )

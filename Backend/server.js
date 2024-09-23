@@ -84,4 +84,9 @@ app.post('/api/addHistory', loginRequired, handlerFunctions.addHistory)
 // DELETE request, as we are removing all history with this call
 app.delete('/api/deleteHistory', loginRequired, handlerFunctions.deleteHistory)
 
+// route for grabbing information from the Google Calendar API
+// requires OAuth through Google before sending to the route
+// POST request, as the access token is private information
+app.post('/api/googleCalendar', loginRequired, handlerFunctions.googleCalendar)
+
 ViteExpress.listen(app, port, () => console.log(`Server is listening on http://localhost:${port}`))

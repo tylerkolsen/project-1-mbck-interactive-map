@@ -23,6 +23,11 @@ const Header = () => {
                     <NotesButton />
                 </li>
                 <li>
+                    <button
+                        onClick={() => navigate('/Calendar')}
+                    >Calendar</button>
+                </li>
+                <li>
                     <LogoutButton />
                 </li>
             </ul>
