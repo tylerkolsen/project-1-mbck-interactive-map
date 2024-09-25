@@ -11,7 +11,7 @@ export default {
         '103': 'repeat(103, minmax(0, 1fr))',
       },
       backgroundImage: {
-        'map': "url('/mbck-map.jpg')",
+        'map': "url('/mbck-map-HD.png')",
       }
     },
   },

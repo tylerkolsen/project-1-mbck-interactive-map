@@ -22,7 +22,7 @@ function App() {
         <Header />
       }
 
-        <main>
+        <main className="h-full w-full flex justify-center overflow-x-auto">
          <Outlet />
         </main>
 
