@@ -182,6 +182,9 @@ const handlerFunctions = {
                 model: Collectible,
                 attributes: ['title'],
             }], 
+            order: [
+                ['usersCollectClickId', 'DESC']
+            ]
         })
         res.send({
             message: "history list gathered",

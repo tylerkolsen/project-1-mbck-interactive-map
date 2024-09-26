@@ -17,7 +17,7 @@ export default function reducer(state = initialState, action) {
                 userId: null,
                 collectInfo: null,
                 userNote: [],
-                userHistory: []
+                userHistory: [],
             }
         case "COLLECT_UPDATE":
             return {

@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
-function NotesButton() {
+function NotesButton({ setDisplayMobileMenu }) {
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -16,6 +16,9 @@ function NotesButton() {
                     payload: res.data.notes
                 })
                 navigate('/Note')
+                if ( setDisplayMobileMenu !== undefined) {
+                    setDisplayMobileMenu(false)
+                }
             })
     }
 

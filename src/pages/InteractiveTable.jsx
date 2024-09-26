@@ -43,7 +43,7 @@ const InteractiveTable = () => {
     }, [width])
 
     return (
-        <>
+        <div className="h-full flex justify-center overflow-x-auto bg-no-repeat">
             { displayModal && 
                 <CollectModal setDisplayModal={setDisplayModal}/>
             }
@@ -70,7 +70,7 @@ const InteractiveTable = () => {
                 </TransformComponent>
             </TransformWrapper>
                     
-        </>
+        </div>
     )
 }
 

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import axios from "axios"
 import handleCollect from "../Functions/handleCollect"
 import { useDispatch } from "react-redux"
@@ -44,43 +44,47 @@ function SearchBar() {
 
   return (
     <>
-        { displayModal && 
-            <CollectModal setDisplayModal={setDisplayModal} />
-        }
-        <div>Search Bar</div>
-        <form onSubmit={(e) => handleSearch(e)}>
-            <input 
-                type="text"
-                value={query}
-                placeholder="Enter search here"
-                onChange={(e) => setQuery(e.target.value)}
-                className="bg-gray-400/40 border-black border-[1px]"
-            />
-            <select 
-                name="columns" 
-                id="columns"
-                value={columnType}
-                onChange={(e) => setColumnType(e.target.value)}
-                className="bg-gray-400/40 border-black border-[1px]"
-            >
-                <option value="title">Title</option>
-                <option value="reward">Reward</option>
-                <option value="prerequisites">Prerequisites</option>
-                <option value="description">Description</option>
-                <option value="all">All</option>
-
-            </select>
-            <input 
-                type="submit"
-                className="border-black border-[1px]" 
-            />
-        </form>
-        <ul>
-            { displayError && 
-                <li>{error}</li>
+        <div className="h-full flex justify-center overflow-x-auto bg-no-repeat">
+            { displayModal && 
+                <CollectModal setDisplayModal={setDisplayModal} />
             }
-            {allResults}
-        </ul>
+            <div className="flex-col">
+                <div>Search Bar</div>
+                <form onSubmit={(e) => handleSearch(e)}>
+                    <input 
+                        type="text"
+                        value={query}
+                        placeholder="Enter search here"
+                        onChange={(e) => setQuery(e.target.value)}
+                        className="bg-gray-400/40 border-black border-[1px]"
+                    />
+                    <select 
+                        name="columns" 
+                        id="columns"
+                        value={columnType}
+                        onChange={(e) => setColumnType(e.target.value)}
+                        className="bg-gray-400/40 border-black border-[1px]"
+                    >
+                        <option value="title">Title</option>
+                        <option value="reward">Reward</option>
+                        <option value="prerequisites">Prerequisites</option>
+                        <option value="description">Description</option>
+                        <option value="all">All</option>
+
+                    </select>
+                    <input 
+                        type="submit"
+                        className="border-black border-[1px]" 
+                    />
+                </form>
+                <ul>
+                    { displayError && 
+                        <li>{error}</li>
+                    }
+                    {allResults}
+                </ul>
+            </div>
+        </div>
     </>
   )
 }

@@ -7,7 +7,7 @@ const LogoutButton = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
     
-    const handleLogout = () => {
+    const handleLogout = ({ setDisplayMobileMenu }) => {
 
         axios.post('/api/logout')
         .then((res) => {
@@ -16,6 +16,9 @@ const LogoutButton = () => {
                     type: "LOGOUT"
                 })
                 navigate('/')
+                if ( setDisplayMobileMenu !== undefined) {
+                    setDisplayMobileMenu(false)
+                }
             }
         })
 

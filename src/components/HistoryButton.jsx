@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
 
-function HistoryButton() {
+function HistoryButton({ setDisplayMobileMenu }) {
 
     const dispatch = useDispatch()
     const navigate = useNavigate()
@@ -16,6 +16,9 @@ function HistoryButton() {
                     payload: res.data.history
                 })
             navigate('/History')
+            if ( setDisplayMobileMenu !== undefined) {
+                setDisplayMobileMenu(false)
+            }
             })
     }
 

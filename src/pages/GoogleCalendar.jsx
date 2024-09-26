@@ -47,7 +47,7 @@ function GoogleCalendar() {
     })
 
   return (
-    <>
+    <div className="h-full flex justify-center overflow-x-auto bg-no-repeat">
        <div>
         <h2>Sign in with Google</h2>
         <button
@@ -59,7 +59,7 @@ function GoogleCalendar() {
           <h2>Upcoming Events</h2>
           <ul>{allEvents}</ul>
        </div>
-    </>
+    </div>
     
   )
 }

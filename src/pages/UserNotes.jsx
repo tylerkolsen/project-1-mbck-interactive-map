@@ -41,7 +41,7 @@ const UserNotes = () => {
     })
 
     return(
-        <>
+        <div className="h-full flex justify-center overflow-x-auto bg-no-repeat">
             { displayModal && 
                 <CollectModal setDisplayModal={setDisplayModal}/>
             }
@@ -51,7 +51,7 @@ const UserNotes = () => {
                     {allNotes}
                 </ul>
             </div>  
-        </> 
+        </div> 
     )
 }
 

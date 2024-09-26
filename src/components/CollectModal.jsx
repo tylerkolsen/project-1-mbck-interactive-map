@@ -14,8 +14,6 @@ function CollectModal({ setDisplayModal }) {
     })
 
     const handleModalChange = (e) => {
-        console.log(e.target)
-        console.log(!e.target.matches("button"))
         if (e.target.parentElement.matches("form") || e.target.matches("button") ) {
            return
         } 
@@ -26,9 +24,9 @@ function CollectModal({ setDisplayModal }) {
     <div
         id="modalDiv" 
         onClick={(e) => handleModalChange(e)}
-        className="absolute z-10 w-[100vw] h-[94vh] snap-center flex bg-gray-500/50 items-center justify-center">
+        className="fixed z-20 w-[100vw] h-full snap-center flex bg-gray-500/50 items-center justify-center">
         <div 
-            className="flex flex-col w-[25vw] h-[70vh] bg-white rounded-md shadow-md justify-between overflow-auto border-black border-[2px]">
+            className="flex flex-col w-[480px] h-[75vh] bg-white rounded-md shadow-md justify-between overflow-auto border-black border-[2px] m-2">
             {/* <button 
                 onClick={() => setDisplayModal(false)}
                 className="self-end px-4 pt-4"

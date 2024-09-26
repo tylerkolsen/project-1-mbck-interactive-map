@@ -54,9 +54,11 @@ const Landing = () => {
     }, [])
 
     return displayCreate ? (
-        <CreateUser setDisplayCreate={setDisplayCreate}/>
+        <div className="h-full flex-col justify-center">
+            <CreateUser setDisplayCreate={setDisplayCreate}/>
+        </div>
     ) : (
-        <div className="flex-row place-content-center">
+        <div className="h-full flex-col justify-center">
             <h1>Login</h1>
             <form 
                 onSubmit={handleLogin}
