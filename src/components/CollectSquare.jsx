@@ -1,9 +1,10 @@
 import axios from "axios"
 import { useDispatch } from "react-redux"
 import handleCollect from "../Functions/handleCollect.js"
+import { useState, useEffect } from "react"
 
 
-const CollectSquare = ({ id, setDisplayModal, scaleValue }) => {
+const CollectSquare = ({ id, setDisplayModal, width }) => {
 
     const dispatch = useDispatch()
 
@@ -11,7 +12,10 @@ const CollectSquare = ({ id, setDisplayModal, scaleValue }) => {
         <section 
             id={id} 
             onClick={() => handleCollect(id, setDisplayModal, dispatch)}
-            className={`h-[14.55px] w-[14.58px] border-[3px] border-red-700 p-0 m-0 hover:bg-red-500/40 hover:cursor-pointer`}
+            className={`h-[1.586vh] border-[3px] border-red-700 p-0 m-0 hover:bg-red-500/40 hover:cursor-pointer`}
+            style={{width: `${width}`}}
+
+            // h-[14.55px] w-[14.575px]
 
             // This is the original version of className that I was using
             // className={`w-[0.77vw] h-[1.612vh] border-[3px] border-red-700 p-0 m-0 hover:bg-red-500/40 hover:cursor-pointer scale-${scaleValue}`}

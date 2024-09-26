@@ -2,13 +2,16 @@ import BlankSquare from "../components/BlankSquare.jsx"
 import CollectSquare from "../components/CollectSquare.jsx"
 import collectSet from "../../Backend/collectSet.js"
 import CollectModal from "../components/CollectModal.jsx"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Controls from "../components/Controls.jsx"
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
+import { useMeasure } from 'react-use'
 
 const InteractiveTable = () => {
+    const [ref, { width }] = useMeasure()
+
     const [displayModal, setDisplayModal] = useState(false)
-    const [scaleValue, setScaleValue] = useState("100")
+    const [imgWidth, setImgWidth] = useState(width)
 
     const gridConstruct = () => {
         let gridArr = []
@@ -25,42 +28,47 @@ const InteractiveTable = () => {
                 key={idNum} 
                 id={idNum} 
                 setDisplayModal={setDisplayModal}
-                scaleValue={scaleValue}
+                width={`${imgWidth * 0.00875}px`}
             />
             : <BlankSquare 
                 key={idNum} 
-                id={idNum} 
-                scaleValue={scaleValue}
+                id={idNum}
+                width={`${imgWidth * 0.00875}px`} 
             />
         )
     })        
+
+    useEffect(() => {
+        setImgWidth(width)
+    }, [width])
 
     return (
         <>
             { displayModal && 
                 <CollectModal setDisplayModal={setDisplayModal}/>
             }
-            {/* <TransformWrapper 
+            <TransformWrapper 
                 limitToBounds={true}
             >
                 <Controls />
-                <TransformComponent> */}
-                    <div className="overflow-x-auto">
+                <TransformComponent>
+                    <div ref={ref} className="min-w-max z-0">
                         <img 
                             src="public/mbck-map-HD.png" 
                             alt="" 
                             className="h-[94vh] w-auto"
                         />
-                    {/* <div className={`h-[94%] bg-map bg-contain overflow-auto bg-no-repeat bg-center z-0 rounded-md`}> */}
-                        {/* <div className="flex flex-row h-[94vh] place-items-center absolute start-[7.78vw] top-[3.8vh]">
-                            <div className=" grid grid-cols-103 gap-[1px] auto-rows-min place-items-center">
+                    </div>
+                    <div className={`h-[94vh] w-[97.3%] z-10 absolute start-[1.35%] top-[10.85%]`}>
+                        {/* <div className="h-[94vh] w-full"> */}
+                            <div className="grid grid-cols-103 gap-[0.1445%] place-items-center">
                                 {grid}
                             </div>
-                        </div> */}
-                    {/* </div> */}
+                        {/* </div> */}
                     </div>
-                {/* </TransformComponent>
-            </TransformWrapper> */}
+
+                </TransformComponent>
+            </TransformWrapper>
                     
         </>
     )
