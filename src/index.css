@@ -33,8 +33,8 @@ button:hover {
   .menuButtonActive {
     border: 2px solid #4F2C02;
     padding: 2px 8px 0px 8px;
-    background-color: red;
-    color: #4F2C02;
+    background-color: #4F2C02;
+    color: #96BF78;
     border-radius: 9999px;
   }
 
@@ -52,8 +52,8 @@ button:hover {
   .menuMobileButtonActive {
     border: 2px solid #4F2C02;
     padding: 10px 8px 8px 8px;
-    background-color: red;
-    color: #4F2C02;
+    background-color: #4F2C02;
+    color: #96BF78;
     border-radius: 9999px;
     text-align: center;
     font-size: 18px;

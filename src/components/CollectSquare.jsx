@@ -16,12 +16,6 @@ const CollectSquare = ({ id, setDisplayModal, width }) => {
                 md:border-none
                 `}
             style={{width: `${width}`}}
-
-            // h-[14.55px] w-[14.575px]
-
-            // This is the original version of className that I was using
-            // className={`w-[0.77vw] h-[1.612vh] border-[3px] border-red-700 p-0 m-0 hover:bg-red-500/40 hover:cursor-pointer scale-${scaleValue}`}
-
         ></section>
     )
 }
