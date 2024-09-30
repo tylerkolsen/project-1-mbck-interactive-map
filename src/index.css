@@ -1,4 +1,9 @@
 @tailwind base;
+@layer base {
+  html {
+    @apply font-taxonBold
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -6,3 +11,31 @@ button:hover {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: "Taxon-Regular";
+  src: url("../public/fonts/Taxon-Regular.otf");
+}
+
+@font-face {
+  font-family: "Taxon-Bold";
+  src: url("../public/fonts/Taxon-Bold.otf");
+}
+
+@layer utilities {
+  .menuButton {
+    border: 2px solid #4F2C02;
+    padding: 2px 8px 0px 8px;
+    background-color: #96BF78;
+    color: #4F2C02;
+    border-radius: 9999px;
+  }
+  
+  .menuButtonActive {
+    border: 2px solid #4F2C02;
+    padding: 2px 8px 0px 8px;
+    background-color: red;
+    color: #4F2C02;
+    border-radius: 9999px;
+  }
+
+}

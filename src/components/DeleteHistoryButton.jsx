@@ -19,7 +19,7 @@ function DeleteHistoryButton() {
   return (
     <button
         onClick={handleDelete}
-        className="border-[1px] border-black mb-1 cursor-pointer"
+        className="cursor-pointer border-mBrDark border-[2px] px-[13px] pt-[2px] m-3 rounded-full bg-mGLight text-mBrDark"
     >Delete History</button>
   )
 }

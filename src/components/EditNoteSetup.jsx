@@ -33,27 +33,35 @@ function EditNoteSetup({ noteId }) {
 
   return(
     <>
-      <li><HiOutlinePencilSquare 
-          onClick={() => setDisplayEdit(!displayEdit)}
-          className="cursor-pointer"
-      /></li>
-      <li><DeleteNoteButton noteId={noteId} /></li>
-
       { displayEdit && 
-      <form onSubmit={(e) => handleEditNote(e)}>
-      <input 
-            type="textarea" 
-            placeholder="Add your note here"
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-            className="bg-gray-400/40 border-black border-[1px] mb-1 mx-4"
-        />
+      <form 
+        onSubmit={(e) => handleEditNote(e)}
+        className="flex flex-col justify-center"
+      >
+        <textarea
+          placeholder="Add your note here"
+          value={note}
+          onChange={(e) => setNote(e.target.value)}
+          className="bg-gray-400/40 border-mBrDark text-mBrDark rounded-lg border-[1px] mb-1 mx-3 pt-1 ps-1 resize"
+        ></textarea>
         <input 
             type="submit" 
-            className="border-[1px] border-black mb-1 mx-4 cursor-pointer"
+            className="border-[2px] border-mBrDark text-mBrDark bg-mGLight rounded-full pt-[2px] px-2 mb-1 mx-5 cursor-pointer"
         />
       </form>
       }
+      <li>
+        <button
+          className="bg-mGLight border-mBrDark rounded-lg border-[2px] p-1"
+        ><HiOutlinePencilSquare 
+            size={20}
+            onClick={() => setDisplayEdit(!displayEdit)}
+            className="cursor-pointer text-mBrDark"
+          />
+        </button>
+      </li>
+      <li><DeleteNoteButton
+            noteId={noteId} /></li>
     </>
   )
 }

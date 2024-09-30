@@ -5,7 +5,7 @@ const BlankSquare = ({ id, width }) => {
   return (
     <section
       id={id}
-      className={`m-0 h-[1.586vh] border-[1px] border-black p-0`}
+      className={`h-[1.586vh] p-0 m-0`}
       style={{width: `${width}`}}
       // h-[14.55px] w-[14.575px]
 

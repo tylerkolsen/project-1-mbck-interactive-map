@@ -51,27 +51,26 @@ function AddNoteButton() {
         onSubmit={(e) => handleAddNote(e)}
         className="flex flex-col"
     >
-        <input 
-            type="textarea" 
+        <textarea
             placeholder="Add your note here"
             value={note}
             onChange={(e) => setNote(e.target.value)}
-            className="bg-gray-400/40 border-black border-[1px] mb-1 mx-4"
-        />
+            className="bg-gray-400/40 border-mBrDark text-mBrDark rounded-lg border-[1px] mb-1 mx-3 pt-1 ps-1 resize-y"
+        ></textarea>
         <input 
             type="submit" 
-            className="border-[1px] border-black mb-1 mx-4 cursor-pointer"
+            className="border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark mx-2 mt-1 cursor-pointer"
         />
         <button 
             onClick={() => setDisplayAdd(false)}
-            className="border-[1px] border-black mb-1 mx-4 cursor-pointer"
+            className="border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark mx-2 mb-2 mt-1"
         >Cancel</button>
     </form>
 
   ) : (
     <button 
         onClick={() => setDisplayAdd(true)}
-        className="border-[1px] border-black mb-1 mx-4"
+        className="border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark m-2"
     >Add a Note</button>
   )
 }

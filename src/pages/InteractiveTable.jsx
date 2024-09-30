@@ -28,12 +28,12 @@ const InteractiveTable = () => {
                 key={idNum} 
                 id={idNum} 
                 setDisplayModal={setDisplayModal}
-                width={`${imgWidth * 0.00875}px`}
+                width={`${imgWidth * 0.00886}px`}
             />
             : <BlankSquare 
                 key={idNum} 
                 id={idNum}
-                width={`${imgWidth * 0.00875}px`} 
+                width={`${imgWidth * 0.00886}px`} 
             />
         )
     })        
@@ -43,7 +43,7 @@ const InteractiveTable = () => {
     }, [width])
 
     return (
-        <div className="h-full flex justify-center overflow-x-auto bg-no-repeat">
+        <div className="h-full flex justify-center overflow-x-auto bg-no-repeat bg-gradient-to-br from-cWDark to-cWLight">
             { displayModal && 
                 <CollectModal setDisplayModal={setDisplayModal}/>
             }
@@ -54,14 +54,14 @@ const InteractiveTable = () => {
                 <TransformComponent>
                     <div ref={ref} className="min-w-max z-0">
                         <img 
-                            src="public/mbck-map-HD.png" 
+                            src="public/mbck-map-HD-edited.jpg" 
                             alt="" 
                             className="h-[94vh] w-auto"
                         />
                     </div>
                     <div className={`h-[94vh] w-[97.3%] z-10 absolute start-[1.35%] top-[10.85%]`}>
                         {/* <div className="h-[94vh] w-full"> */}
-                            <div className="grid grid-cols-103 gap-[0.1445%] place-items-center">
+                            <div className="grid grid-cols-103 gap-[0.145%] place-items-center">
                                 {grid}
                             </div>
                         {/* </div> */}

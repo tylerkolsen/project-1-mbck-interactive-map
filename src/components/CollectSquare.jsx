@@ -12,7 +12,9 @@ const CollectSquare = ({ id, setDisplayModal, width }) => {
         <section 
             id={id} 
             onClick={() => handleCollect(id, setDisplayModal, dispatch)}
-            className={`h-[1.586vh] border-[3px] border-red-700 p-0 m-0 hover:bg-red-500/40 hover:cursor-pointer`}
+            className={`h-[1.586vh] p-0 m-0 hover:cursor-pointer hover:bg-hRLight/30 rounded-sm border-[1px] border-hRLight border-dashed
+                md:border-none
+                `}
             style={{width: `${width}`}}
 
             // h-[14.55px] w-[14.575px]

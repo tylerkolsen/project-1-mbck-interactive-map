@@ -38,32 +38,36 @@ function SearchBar() {
         return (<li 
             key={col.collectibleId}
             onClick={() => handleCollect(col.collectibleId, setDisplayModal, dispatch)}
-            className="cursor-pointer text-blue-700 underline"
+            className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1"
         >{col.title}</li>)  
     })
 
   return (
     <>
-        <div className="h-full flex justify-center overflow-x-auto bg-no-repeat">
+        <div className="h-[94vh] overflow-auto flex justify-center bg-gradient-to-br from-cWDark to-cWLight">
             { displayModal && 
                 <CollectModal setDisplayModal={setDisplayModal} />
             }
-            <div className="flex-col">
-                <div>Search Bar</div>
-                <form onSubmit={(e) => handleSearch(e)}>
-                    <input 
-                        type="text"
-                        value={query}
+            <div className="flex flex-col text-center">
+                <h1 className="text-mBrDark text-3xl text-center mb-[6px] pb-[3px] pt-3 border-b-[2px] border-mBrDark w-full"
+                >Search</h1>
+                <form 
+                    onSubmit={(e) => handleSearch(e)}
+                    className="flex flex-col space-y-1"
+                >
+                    <textarea
                         placeholder="Enter search here"
+                        value={query}
+                        rows={1}
                         onChange={(e) => setQuery(e.target.value)}
-                        className="bg-gray-400/40 border-black border-[1px]"
-                    />
+                        className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 w-[350px] resize-none"
+                    ></textarea>
                     <select 
                         name="columns" 
                         id="columns"
                         value={columnType}
                         onChange={(e) => setColumnType(e.target.value)}
-                        className="bg-gray-400/40 border-black border-[1px]"
+                        className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1"
                     >
                         <option value="title">Title</option>
                         <option value="reward">Reward</option>
@@ -74,12 +78,14 @@ function SearchBar() {
                     </select>
                     <input 
                         type="submit"
-                        className="border-black border-[1px]" 
+                        className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full" 
                     />
                 </form>
-                <ul>
+                <ul
+                    className="border-t-[2px] border-mBrDark mt-5 pt-5"
+                >
                     { displayError && 
-                        <li>{error}</li>
+                        <li className="text-mBrDark">{error}</li>
                     }
                     {allResults}
                 </ul>

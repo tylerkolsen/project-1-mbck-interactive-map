@@ -16,7 +16,7 @@ const handlerFunctions = {
         // Check for whether the email is in the database
         if (!userCheck) {
             res.send({
-                message: "no username found",
+                message: "No Username Found",
                 success: false
             })
             return
@@ -24,7 +24,7 @@ const handlerFunctions = {
         // Check for whether the password matches
         if (!bcryptjs.compareSync(password, userCheck.password)) {
             res.send({
-                message: "password does not match",
+                message: "Password Does Not Match",
                 success: false
             })
             return
@@ -81,7 +81,7 @@ const handlerFunctions = {
 
         } else {
             res.send({ 
-                message: "username already exists",
+                message: "Username Already Exists",
                 success: false
             })
         }

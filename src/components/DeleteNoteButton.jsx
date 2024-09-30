@@ -6,8 +6,6 @@ function DeleteNoteButton({ noteId }) {
 
     const dispatch = useDispatch()
 
-    console.log(noteId)
-
     const handleDelete = (noteId) => {
         axios.delete(`/api/deleteNote/${noteId}`)
             .then(() => {
@@ -23,8 +21,9 @@ function DeleteNoteButton({ noteId }) {
 
   return (
     <button
+        className="bg-mGLight border-mBrDark rounded-lg border-[2px] p-1"
         onClick={() => handleDelete(noteId)}
-    ><IoTrashOutline /></button>
+    ><IoTrashOutline className="text-mBrDark" size={20}/></button>
   )
 }
 

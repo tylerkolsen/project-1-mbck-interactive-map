@@ -34,6 +34,11 @@ const Landing = () => {
         })
     }
 
+    const handleCreateAccount = () => {
+        setMessage('')
+        setDisplayCreate(true)
+    }
+
     // This function runs our session cookie check. If there is a session cookie, the server will return that value to us and confirm it is there
     const sessionCheck = () => {
         axios.get('/api/session-check')
@@ -58,36 +63,40 @@ const Landing = () => {
             <CreateUser setDisplayCreate={setDisplayCreate}/>
         </div>
     ) : (
-        <div className="h-full flex-col justify-center">
-            <h1>Login</h1>
+        <div className="h-screen w-full flex flex-col justify-center items-center bg-gradient-to-br from-mYDark to-mYLight">
+            <h1
+                className="text-mBrDark text-3xl mb-[6px] pb-[3px] pt-3 border-b-[2px] border-mBrDark"
+            >Welcome to MBCK Interactive</h1>
             <form 
                 onSubmit={handleLogin}
-                className="flex"
+                className="flex flex-col"
             >
                 <input 
                     type="text" 
                     value={email}
                     placeholder="Email"
                     onChange={(e) => setEmail(e.target.value)}
-                    className="bg-gray-400/40 border-black border-[1px]"
+                    className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mt-2 mb-1"
                 />
                 <input 
                     type="password" 
                     value={password}
                     placeholder="Password"
                     onChange={(e) => setPassword(e.target.value)}
-                    className="bg-gray-400/40 border-black border-[1px]"
+                    className="bg-gray-400/40 border-mBrDark  text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mb-4"
                 />
                 <input 
                     type="submit" 
-                    className="border-black border-[2px]"
+                    className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full"
                 />
             </form>
-            <h2>{message}</h2>
             <button
-                className="border-black border-[2px]"
-                onClick={() => setDisplayCreate(true)}
+                className="text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-[42px] rounded-full my-1"
+                onClick={handleCreateAccount}
             >Create Account</button>
+            <h2
+                className="text-mBrDark text-3xl mb-[6px] pb-[3px] pt-3"
+            >{message}</h2>
         </div>
     )
 }
