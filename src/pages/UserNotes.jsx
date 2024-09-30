@@ -5,7 +5,8 @@ import handleCollect from "../Functions/handleCollect.js"
 import EditNoteSetup from "../components/EditNoteSetup.jsx"
 import axios from "axios"
 
-const UserNotes = ({ setDisplayMobileMenu }) => {
+
+const UserNotes = () => {
     const userNote = useSelector((state) => state.userNote)
     const [displayModal, setDisplayModal] = useState(false)
 
@@ -19,9 +20,6 @@ const UserNotes = ({ setDisplayMobileMenu }) => {
                     type: "NOTE_UPDATE",
                     payload: res.data.notes
                 })
-                if ( setDisplayMobileMenu !== undefined) {
-                    setDisplayMobileMenu(false)
-                }
             })
     }
 
@@ -51,7 +49,7 @@ const UserNotes = ({ setDisplayMobileMenu }) => {
                         onClick={() => handleCollect(note.collectibleId, setDisplayModal, dispatch)}
                         className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1"
                     >{note.collectible.title}</li>
-                    <li>
+                    <li key={`${note.noteId}Parent`}>
                         <ul className="flex flex-row items-center space-x-2 px-2 pt-2 pb-1">
                             <li 
                                 key={note.noteId} 

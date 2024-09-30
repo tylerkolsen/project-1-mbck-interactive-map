@@ -7,7 +7,7 @@ import handleCollect from "../Functions/handleCollect"
 import DeleteHistoryButton from "../components/DeleteHistoryButton.jsx"
 
 
-const UserHistory = ({ setDisplayMobileMenu }) => {
+const UserHistory = () => {
     const userHistory = useSelector((state) => state.userHistory)
     const [displayModal, setDisplayModal] = useState(false)
 
@@ -20,9 +20,6 @@ const UserHistory = ({ setDisplayMobileMenu }) => {
                     type: "HISTORY_UPDATE",
                     payload: res.data.history
                 })
-            if ( setDisplayMobileMenu !== undefined) {
-                setDisplayMobileMenu(false)
-            }
             })
     }
     

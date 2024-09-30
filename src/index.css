@@ -38,4 +38,26 @@ button:hover {
     border-radius: 9999px;
   }
 
+  .menuMobileButton {
+    border: 2px solid #4F2C02;
+    padding: 10px 8px 8px 8px;
+    background-color: #96BF78;
+    color: #4F2C02;
+    border-radius: 9999px;
+    text-align: center;
+    font-size: 18px;
+    width: 66vw;
+  }
+
+  .menuMobileButtonActive {
+    border: 2px solid #4F2C02;
+    padding: 10px 8px 8px 8px;
+    background-color: red;
+    color: #4F2C02;
+    border-radius: 9999px;
+    text-align: center;
+    font-size: 18px;
+    width: 66vw;
+  }
+
 }

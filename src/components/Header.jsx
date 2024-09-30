@@ -36,7 +36,7 @@ const Header = () => {
                     <NavLink
                         to={'/Home'}
                         className={({ isActive }) => 
-                            isActive ? "menuButtonActive" 
+                            isActive || location.pathname === "/" ? "menuButtonActive" 
                             : "menuButton"                            
                         }
                     >Map                
