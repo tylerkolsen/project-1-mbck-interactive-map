@@ -46,20 +46,38 @@ function EditNoteSetup({ noteId }) {
         ></textarea>
         <input 
             type="submit" 
-            className="border-[2px] border-mBrDark text-mBrDark bg-mGLight rounded-full pt-[2px] px-2 mb-1 mx-5 cursor-pointer"
+            className="border-[2px] border-mBrDark text-mBrDark bg-mGLight rounded-full pt-[2px] px-2 mb-1 mx-5 cursor-pointer shadow-md shadow-onyx/25 
+            transition duration-150 
+            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
         />
       </form>
       }
-      <li>
-        <button
-          className="bg-mGLight border-mBrDark rounded-lg border-[2px] p-1"
-        ><HiOutlinePencilSquare 
-            size={20}
+      { displayEdit && 
+        <li>
+          <button
+            className="bg-mBrDark border-mBrDark rounded-lg border-[2px] p-1
+            transition duration-150 text-mGLight
+            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
             onClick={() => setDisplayEdit(!displayEdit)}
-            className="cursor-pointer text-mBrDark"
-          />
-        </button>
-      </li>
+          ><HiOutlinePencilSquare 
+              size={20}
+            />
+          </button>
+        </li>
+      }
+      { !displayEdit && 
+        <li>
+          <button
+            className="bg-mGLight border-mBrDark rounded-lg border-[2px] p-1
+            transition duration-150 text-mBrDark shadow-inner shadow-onyx/25
+            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+            onClick={() => setDisplayEdit(!displayEdit)}
+          ><HiOutlinePencilSquare 
+              size={20}
+            />
+          </button>
+        </li>
+      }
       <li><DeleteNoteButton
             noteId={noteId} /></li>
     </>

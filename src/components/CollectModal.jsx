@@ -24,9 +24,9 @@ function CollectModal({ setDisplayModal }) {
     <div
         id="modalDiv" 
         onClick={(e) => handleModalChange(e)}
-        className="fixed z-20 w-[100vw] h-[94vh] snap-center flex bg-gray-500/50 items-center justify-center">
+        className="fixed z-20 w-[100vw] h-[94vh] snap-center flex bg-onyx/50 items-center justify-center">
         <div 
-            className="flex flex-col w-[480px] max-h-[80vh] bg-gradient-to-br from-cWDark to-cWLight rounded-lg shadow-md overflow-auto border-mBrDark border-[2px] m-2">
+            className="flex flex-col w-[480px] max-h-[80vh] bg-gradient-to-br from-cWDark to-cWLight rounded-lg shadow-2xl shadow-black/50 overflow-auto border-mBrDark border-[2px] m-2">
             <h1
                className="bg-gradient-to-br from-mYDark to-mYLight border-b-[2px] border-mBrDark text-onyx pb-4 pt-5 px-2"
             >{title}</h1>

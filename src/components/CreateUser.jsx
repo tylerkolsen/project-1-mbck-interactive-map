@@ -58,11 +58,15 @@ function CreateUser({ setDisplayCreate }) {
                 />
                 <input 
                     type="submit" 
-                    className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full"
+                    className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full shadow-md shadow-onyx/25
+                    transition duration-150
+                    hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
                 />
             </form>
             <button
-                className="text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-[48px] rounded-full my-1"
+                className="text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-[48px] rounded-full my-1 shadow-md shadow-onyx/25
+                transition duration-150
+                hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
                 onClick={() => setDisplayCreate(false)}
             >Back to Login</button>
             <h2

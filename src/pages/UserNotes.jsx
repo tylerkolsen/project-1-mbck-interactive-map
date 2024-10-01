@@ -47,7 +47,9 @@ const UserNotes = () => {
                         key={`${note.noteId}Title`} 
                         id={`${note.noteId}Title`}
                         onClick={() => handleCollect(note.collectibleId, setDisplayModal, dispatch)}
-                        className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1"
+                        className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1 shadow-md shadow-onyx/25 
+                        transition duration-150 
+                        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
                     >{note.collectible.title}</li>
                     <li key={`${note.noteId}Parent`}>
                         <ul className="flex flex-row items-center space-x-2 px-2 pt-2 pb-1">

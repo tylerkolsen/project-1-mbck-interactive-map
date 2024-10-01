@@ -28,6 +28,19 @@ button:hover {
     background-color: #96BF78;
     color: #4F2C02;
     border-radius: 9999px;
+    box-shadow: 0 4px 6px -1px rgb(46 53 50 / .25), 0 2px 4px -2px rgb(46 53 50 / .25);
+  }
+
+  .menuButton:hover {
+    transition-duration: 150ms;
+    background-color: #4F2C02;
+    color: #96BF78;
+    transform: scale(1.1)
+  }
+
+  .menuButton:active {
+    transition-duration: 150ms;
+    transform: scale(1);
   }
   
   .menuButtonActive {
@@ -36,17 +49,34 @@ button:hover {
     background-color: #4F2C02;
     color: #96BF78;
     border-radius: 9999px;
+    box-shadow: 0 4px 6px -1px rgb(46 53 50 / .25), 0 2px 4px -2px rgb(46 53 50 / .25);
+  }
+
+  .menuButtonActive:hover {
+    transition-duration: 150ms;
+    transform: scale(1.1)
+  }
+
+  .menuButtonActive:active {
+    transition-duration: 150ms;
+    transform: scale(1);
   }
 
   .menuMobileButton {
     border: 2px solid #4F2C02;
-    padding: 10px 8px 8px 8px;
+    padding:4 8p68px 1px;
     background-color: #96BF78;
     color: #4F2C02;
     border-radius: 9999px;
     text-align: center;
     font-size: 18px;
     width: 66vw;
+    box-shadow: 0 4px 6px -1px rgb(46 53 50 / .25), 0 2px 4px -2px rgb(46 53 50 / .25);
+  }
+
+  .menuMobileButton:active {
+    transition-duration: 150ms;
+    transform: scale(1);
   }
 
   .menuMobileButtonActive {
@@ -57,7 +87,7 @@ button:hover {
     border-radius: 9999px;
     text-align: center;
     font-size: 18px;
-    width: 66vw;
+    box-shadow: 0 4px 6px -1px rgb(46 53 50 / .25), 0 2px 4px -2px rgb(46 53 50 / .25);
   }
 
 }

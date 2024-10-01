@@ -48,7 +48,7 @@ function AddNoteButton() {
   return displayAdd ? (
     <form 
         onSubmit={(e) => handleAddNote(e)}
-        className="flex flex-col"
+        className="flex flex-col place-items-auto"
     >
         <textarea
             placeholder="Add your note here"
@@ -58,18 +58,25 @@ function AddNoteButton() {
         ></textarea>
         <input 
             type="submit" 
-            className="border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark mx-2 mt-1 cursor-pointer"
+            className="w-[75%] self-center border-[2px] border-mBrDark rounded-full px-2 pt-[2px] bg-mGLight text-mBrDark mx-2 mt-1 cursor-pointer shadow-md shadow-onyx/25 
+            transition duration-150
+            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
         />
         <button 
             onClick={() => setDisplayAdd(false)}
-            className="border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark mx-2 mb-2 mt-1"
+            className="w-[75%] self-center border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark mx-2 mb-2 mt-1 shadow-md shadow-onyx/25
+            transition duration-150
+            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+            
         >Cancel</button>
     </form>
 
   ) : (
     <button 
         onClick={() => setDisplayAdd(true)}
-        className="border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark m-2"
+        className="w-[75%] self-center border-[2px] border-mBrDark rounded-full px-2 pt-[2px] hover:bg-gray-500/50 focus-within:bg-gray-500/50 bg-mGLight text-mBrDark m-2 shadow-md shadow-onyx/25
+        transition duration-150
+        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
     >Add a Note</button>
   )
 }

@@ -38,7 +38,8 @@ function SearchBar() {
         return (<li 
             key={col.collectibleId}
             onClick={() => handleCollect(col.collectibleId, setDisplayModal, dispatch)}
-            className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1"
+            className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1 transition duration-150
+                        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
         >{col.title}</li>)  
     })
 
@@ -78,7 +79,9 @@ function SearchBar() {
                     </select>
                     <input 
                         type="submit"
-                        className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full" 
+                        className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full shadow-md shadow-onyx/25
+                        transition duration-150
+                        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100" 
                     />
                 </form>
                 <ul

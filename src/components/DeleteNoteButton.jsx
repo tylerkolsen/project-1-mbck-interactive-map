@@ -21,9 +21,11 @@ function DeleteNoteButton({ noteId }) {
 
   return (
     <button
-        className="bg-mGLight border-mBrDark rounded-lg border-[2px] p-1"
+        className="bg-mGLight border-mBrDark text-mBrDark rounded-lg border-[2px] p-1 shadow-inner shadow-onyx/25
+        transition duration-150 
+        hover:bg-mBrDark hover:first:text-mGLight hover:scale-105 active:scale-100"
         onClick={() => handleDelete(noteId)}
-    ><IoTrashOutline className="text-mBrDark" size={20}/></button>
+    ><IoTrashOutline size={20}/></button>
   )
 }
 

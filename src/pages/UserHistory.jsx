@@ -29,7 +29,9 @@ const UserHistory = () => {
                 key={his.usersCollectClickId} 
                 id={his.usersCollectClickId}
                 onClick={() => handleCollect(his.collectibleId, setDisplayModal, dispatch)}
-                className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-2 rounded-full my-1"
+                className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-2 rounded-full my-1 
+                transition duration-150 
+                hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
             >{his.collectible.title}</li>
         )
     })
