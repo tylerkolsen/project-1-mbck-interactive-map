@@ -8,7 +8,13 @@ function CollectModal({ setDisplayModal }) {
 
     const allNotes = notes.map((note) => {
         if (note.userId === userId) {
-            return <li key={note.noteId} id={note.noteId}>{note.description}</li>
+            return(
+                <li 
+                    key={note.noteId} 
+                    id={note.noteId}
+                    className="pb-2 last:pb-0"
+                >{note.description}</li>
+            )    
         }
     })
 

@@ -46,6 +46,7 @@ function CreateUser({ setDisplayCreate }) {
                     type="text" 
                     value={email}
                     placeholder="Email"
+                    required
                     onChange={(e) => setEmail(e.target.value)}
                     className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mt-2 mb-1"
                 />
@@ -53,6 +54,7 @@ function CreateUser({ setDisplayCreate }) {
                     type="password" 
                     value={password}
                     placeholder="Password"
+                    required
                     onChange={(e) => setPassword(e.target.value)}
                     className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mb-4"
                 />
