@@ -34,16 +34,15 @@ function AddNoteButton() {
                     setNote('')
                     setDisplayAdd(false)
                 }
-        })
-        
-        // This is to update the redux store with the value of notes, so that UserNotes.jsx will update with your newly added note, even from that menu
-        axios.get('/api/notes')
-            .then((res) => {
-                dispatch({
-                    type: "NOTE_UPDATE",
-                    payload: res.data.notes
+                 // This is to update the redux store with the value of notes, so that UserNotes.jsx will update with your newly added note, even from that menu
+                axios.get('/api/notes')
+                .then((res) => {
+                    dispatch({
+                        type: "NOTE_UPDATE",
+                        payload: res.data.notes
+                    })
                 })
-            })
+        })
     }
 
   return displayAdd ? (
