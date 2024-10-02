@@ -1,7 +1,7 @@
-import { User, Collectible, Note, db } from '../src/model.js'
-import collectSet from '../Backend/collectSet.js'
 import lodash from 'lodash' 
 import bcryptjs from 'bcryptjs'
+import collectSet from '../Backend/collectSet.js'
+import { User, Collectible, Note, db } from '../src/model.js'
 
 console.log('Syncing database...')
 await db.sync({ force: true })
@@ -26,7 +26,6 @@ const collectsInDB = await Promise.all(
 
         return newCollect
     })
-
 )
 
 console.log(collectsInDB)

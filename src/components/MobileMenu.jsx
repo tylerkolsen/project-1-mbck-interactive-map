@@ -1,8 +1,7 @@
-import LogoutButton from "./LogoutButton.jsx"
 import { NavLink } from "react-router-dom"
+import LogoutButton from "./LogoutButton.jsx"
 
 function MobileMenu({ setDisplayMobileMenu }) {
-
 
   return (
     <div className="absolute md:hidden flex justify-center items-center h-[94vh] w-full z-40 bg-gradient-to-br from-cWDark to-cWLight">

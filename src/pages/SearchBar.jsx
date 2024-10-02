@@ -67,7 +67,7 @@ function SearchBar() {
                         id="columns"
                         value={columnType}
                         onChange={(e) => setColumnType(e.target.value)}
-                        className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mx-3 mb-1 focus:outline-[2px] focus:outline-mBrDark"
+                        className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mx-3 mb-1 focus:ring-0 focus:outline-none"
                     >
                         <option value="title">Title</option>
                         <option value="reward">Reward</option>

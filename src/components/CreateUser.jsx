@@ -1,7 +1,8 @@
-import axios from "axios"
-import { useDispatch } from "react-redux"
-import { useNavigate } from "react-router-dom"
 import { useState } from "react"
+import { useDispatch } from "react-redux"
+import axios from "axios"
+import { useNavigate } from "react-router-dom"
+
 
 function CreateUser({ setDisplayCreate }) {
     const [email, setEmail] = useState('')
@@ -30,7 +31,6 @@ function CreateUser({ setDisplayCreate }) {
             }
             setMessage(res.data.message)
         })
-
     }
 
   return (
@@ -48,7 +48,7 @@ function CreateUser({ setDisplayCreate }) {
                     placeholder="Email"
                     required
                     onChange={(e) => setEmail(e.target.value)}
-                    className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mt-2 mb-1"
+                    className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mt-2 mb-1 focus:ring-0 focus:outline-none"
                 />
                 <input 
                     type="password" 
@@ -56,19 +56,15 @@ function CreateUser({ setDisplayCreate }) {
                     placeholder="Password"
                     required
                     onChange={(e) => setPassword(e.target.value)}
-                    className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mb-4"
+                    className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mb-4 focus:ring-0 focus:outline-none"
                 />
                 <input 
                     type="submit" 
-                    className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full shadow-md shadow-onyx/25
-                    transition duration-150
-                    hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+                    className="otherButton rounded-full pb-1 pt-2"
                 />
             </form>
             <button
-                className="text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-[48px] rounded-full my-1 shadow-md shadow-onyx/25
-                transition duration-150
-                hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+                className="otherButton rounded-full pb-1 pt-2 px-[48px] my-1"
                 onClick={() => setDisplayCreate(false)}
             >Back to Login</button>
             <h2

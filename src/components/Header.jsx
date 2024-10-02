@@ -1,7 +1,7 @@
-import { NavLink, useNavigate } from "react-router-dom"
-import LogoutButton from "./LogoutButton"
-import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import LogoutButton from "./LogoutButton.jsx";
 import MobileMenu from "./MobileMenu.jsx";
 
 const Header = () => {

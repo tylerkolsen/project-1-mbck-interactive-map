@@ -77,7 +77,7 @@ const Landing = () => {
                     placeholder="Email"
                     required
                     onChange={(e) => setEmail(e.target.value)}
-                    className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mt-2 mb-1"
+                    className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mt-2 mb-1 focus:ring-0 focus:outline-none"
                 />
                 <input 
                     type="password" 
@@ -85,19 +85,15 @@ const Landing = () => {
                     placeholder="Password"
                     required
                     onChange={(e) => setPassword(e.target.value)}
-                    className="bg-gray-400/40 border-mBrDark  text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mb-4"
+                    className="bg-gray-400/40 border-mBrDark  text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mb-4 focus:ring-0 focus:outline-none"
                 />
                 <input 
                     type="submit" 
-                    className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full shadow-md shadow-onyx/25
-                    transition duration-150
-                    hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+                    className="otherButton rounded-full pb-1 pt-2"
                 />
             </form>
             <button
-                className="text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-[42px] rounded-full my-1 shadow-md shadow-onyx/25
-                transition duration-150
-                hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+                className="otherButton rounded-full pb-1 pt-2 px-[42px] my-1"
                 onClick={handleCreateAccount}
             >Create Account</button>
             <h2
