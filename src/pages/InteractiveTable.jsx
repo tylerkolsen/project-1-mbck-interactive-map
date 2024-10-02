@@ -45,7 +45,7 @@ const InteractiveTable = () => {
     return (
         <div className="h-full flex justify-center overflow-x-auto bg-no-repeat bg-gradient-to-br from-cWDark to-cWLight">
             { displayModal && 
-                <CollectModal setDisplayModal={setDisplayModal}/>
+                <CollectModal displayModal={displayModal} setDisplayModal={setDisplayModal}/>
             }
             <TransformWrapper 
                 limitToBounds={true}

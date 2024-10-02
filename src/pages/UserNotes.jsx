@@ -49,7 +49,7 @@ const UserNotes = () => {
                         key={`${note.noteId}Title`} 
                         id={`${note.noteId}Title`}
                         onClick={() => handleCollect(note.collectibleId, setDisplayModal, dispatch)}
-                        className="otherButton rounded-full pb-1 pt-2 px-2 my-1" 
+                        className="otherButton rounded-full pb-1 pt-2 px-2 mt-2 mb-1" 
                     >{note.collectible.title}</li>
                     <li key={`${note.noteId}Parent`} id={`${note.noteId}Parent`}>
                         <ul 
@@ -75,12 +75,12 @@ const UserNotes = () => {
     return(
         <div className="h-[94vh] overflow-auto flex justify-center bg-gradient-to-br from-cWDark to-cWLight">
             { displayModal && 
-                <CollectModal setDisplayModal={setDisplayModal}/>
+                <CollectModal displayModal={displayModal} setDisplayModal={setDisplayModal}/>
             }
             <div className="flex flex-col text-center md:w-[66vw] mx-2">
                 <h1 className="text-mBrDark text-3xl text-center mb-[6px] pb-[3px] pt-3 border-b-[2px] border-mBrDark w-full"
                 >User Notes</h1>
-                <ul key="noteContainer">
+                <ul key="noteContainer" className="pb-4">
                     {allNotes}
                 </ul>
             </div>  

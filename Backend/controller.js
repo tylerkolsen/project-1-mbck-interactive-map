@@ -120,7 +120,7 @@ const handlerFunctions = {
                 attributes: ['title'],
             }],
             order: [
-                sequelize.col('collectible'),
+                sequelize.col('collectible.title'),
                 sequelize.col('noteId')
             ]
 

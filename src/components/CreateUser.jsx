@@ -45,7 +45,7 @@ function CreateUser({ setDisplayCreate }) {
                 <input 
                     type="text" 
                     value={email}
-                    placeholder="Email"
+                    placeholder="Username"
                     required
                     onChange={(e) => setEmail(e.target.value)}
                     className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mt-2 mb-1 focus:ring-0 focus:outline-none"

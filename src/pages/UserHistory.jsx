@@ -37,7 +37,7 @@ const UserHistory = () => {
     return(
         <div className="h-[94vh] overflow-auto flex justify-center bg-gradient-to-br from-cWDark to-cWLight items-start">
             { displayModal && 
-                <CollectModal setDisplayModal={setDisplayModal}/>
+                <CollectModal displayModal={displayModal} setDisplayModal={setDisplayModal}/>
             }
             <div className="flex flex-col justify-center items-center md:w-[520px]">
                 <h1 className="text-mBrDark text-3xl text-center mb-[6px] pb-[3px] pt-3 border-b-[2px] border-mBrDark w-full">User History</h1>

@@ -46,10 +46,10 @@ function SearchBar() {
     <>
         <div className="h-[94vh] overflow-auto flex justify-center bg-gradient-to-br from-cWDark to-cWLight">
             { displayModal && 
-                <CollectModal setDisplayModal={setDisplayModal} />
+                <CollectModal displayModal={displayModal} setDisplayModal={setDisplayModal} />
             }
             <div className="flex flex-col text-center">
-                <h1 className="text-mBrDark text-3xl text-center mb-[6px] pb-[3px] pt-3 border-b-[2px] border-mBrDark w-full"
+                <h1 className="text-mBrDark text-3xl text-center mb-5 pb-[3px] pt-3 border-b-[2px] border-mBrDark w-full"
                 >Search</h1>
                 <form 
                     onSubmit={(e) => handleSearch(e)}
@@ -78,7 +78,7 @@ function SearchBar() {
                     </select>
                     <input 
                         type="submit"
-                        className="otherButton rounded-full pb-1 pt-2" 
+                        className="otherButton rounded-full pb-1 pt-2 mx-3" 
                     />
                 </form>
                 <ul
