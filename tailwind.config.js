@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       // Allowing for more than 12 columns in the grid pattern
+      screens: {
+        "shorty": {"raw": "(max-height:800px)"}
+      },
       gridTemplateColumns: {
         '103': 'repeat(103, minmax(0, 1fr))',
-      },
-      backgroundImage: {
-        'map': "url('/mbck-map-HD-edited.jpg')",
       },
       fontFamily: {
         taxonRegular: ["Taxon-Regular", "sans-serif"],

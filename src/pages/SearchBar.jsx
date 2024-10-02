@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react"
-import axios from "axios"
-import handleCollect from "../Functions/handleCollect"
+import { useState } from "react"
 import { useDispatch } from "react-redux"
-import CollectModal from "../components/CollectModal"
+import axios from "axios"
+import handleCollect from "../Functions/handleCollect.js"
+import CollectModal from "../components/CollectModal.jsx"
 
 function SearchBar() {
     const [query, setQuery] = useState('')
@@ -38,8 +38,7 @@ function SearchBar() {
         return (<li 
             key={col.collectibleId}
             onClick={() => handleCollect(col.collectibleId, setDisplayModal, dispatch)}
-            className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1 transition duration-150
-                        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+            className="otherButton rounded-full pb-1 pt-2 px-2 my-2"
         >{col.title}</li>)  
     })
 
@@ -54,21 +53,21 @@ function SearchBar() {
                 >Search</h1>
                 <form 
                     onSubmit={(e) => handleSearch(e)}
-                    className="flex flex-col space-y-1"
+                    className="flex flex-col"
                 >
                     <textarea
                         placeholder="Enter search here"
                         value={query}
                         rows={1}
                         onChange={(e) => setQuery(e.target.value)}
-                        className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 w-[350px] resize-none"
+                        className="resize-none"
                     ></textarea>
                     <select 
                         name="columns" 
                         id="columns"
                         value={columnType}
                         onChange={(e) => setColumnType(e.target.value)}
-                        className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1"
+                        className="bg-gray-400/40 border-mBrDark text-mBrDark border-[1px] rounded-lg pt-1 ps-1 mx-3 mb-1 focus:outline-[2px] focus:outline-mBrDark"
                     >
                         <option value="title">Title</option>
                         <option value="reward">Reward</option>
@@ -79,13 +78,11 @@ function SearchBar() {
                     </select>
                     <input 
                         type="submit"
-                        className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 rounded-full shadow-md shadow-onyx/25
-                        transition duration-150
-                        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100" 
+                        className="otherButton rounded-full pb-1 pt-2" 
                     />
                 </form>
                 <ul
-                    className="border-t-[2px] border-mBrDark mt-5 pt-5"
+                    className="border-t-[2px] border-mBrDark mt-5 pt-4"
                 >
                     { displayError && 
                         <li className="text-mBrDark">{error}</li>

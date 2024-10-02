@@ -1,24 +1,39 @@
 @tailwind base;
-@layer base {
-  html {
-    @apply font-taxonBold
-  }
-}
 @tailwind components;
 @tailwind utilities;
 
-button:hover {
-  cursor: pointer;
-}
-
 @font-face {
   font-family: "Taxon-Regular";
-  src: url("../public/fonts/Taxon-Regular.otf");
+  src: url("/fonts/Taxon-Regular.otf");
 }
 
 @font-face {
   font-family: "Taxon-Bold";
-  src: url("../public/fonts/Taxon-Bold.otf");
+  src: url("/fonts/Taxon-Bold.otf");
+}
+
+@layer base {
+  html {
+    @apply font-taxonBold
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  textarea {
+    background-color: rgb(156 163 175 / .40);
+    border: 1px solid #4F2C02;
+    border-radius: 0.5rem;
+    color: #4F2C02;
+    margin: 0px 12px 4px 12px;
+    padding: 4px 0px 0px 4px;
+  }
+
+  textarea:focus {
+    outline: 2px solid #4F2C02;
+  }
+
 }
 
 @layer utilities {
@@ -84,6 +99,26 @@ button:hover {
     font-size: 18px;
     width: 66vw;
     box-shadow: 0 4px 6px -1px rgb(46 53 50 / .25), 0 2px 4px -2px rgb(46 53 50 / .25);
+  }
+
+  .otherButton {
+    border: 2px solid #4F2C02;
+    background-color: #96BF78;
+    color: #4F2C02;
+    box-shadow: 0 4px 6px -1px rgb(46 53 50 / .25), 0 2px 4px -2px rgb(46 53 50 / .25);
+    cursor: pointer;
+  }
+
+  .otherButton:hover {
+    transition-duration: 150ms;
+    background-color: #4F2C02;
+    color: #96BF78;
+    transform: scale(1.05)
+  }
+
+  .otherButton:active {
+    transition-duration: 150ms;
+    transform: scale(1);
   }
 
 }

@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { useDispatch } from "react-redux"
 import axios from "axios"
-import DeleteNoteButton from "./DeleteNoteButton"
 import { HiOutlinePencilSquare } from "react-icons/hi2"
+import DeleteNoteButton from "./DeleteNoteButton"
 
 function EditNoteSetup({ noteId }) {
   const [note, setNote] = useState('')
@@ -35,28 +35,30 @@ function EditNoteSetup({ noteId }) {
     <>
       { displayEdit && 
       <form 
+        key={`${noteId}Form`}
         onSubmit={(e) => handleEditNote(e)}
         className="flex flex-col justify-center"
       >
         <textarea
+          key={`${noteId}TextArea`}
           placeholder="Add your note here"
           value={note}
           onChange={(e) => setNote(e.target.value)}
-          className="bg-gray-400/40 border-mBrDark text-mBrDark rounded-lg border-[1px] mb-1 mx-3 pt-1 ps-1 resize"
+          className="resize"
         ></textarea>
-        <input 
+        <input
+            key={`${noteId}Submit`} 
             type="submit" 
-            className="border-[2px] border-mBrDark text-mBrDark bg-mGLight rounded-full pt-[2px] px-2 mb-1 mx-5 cursor-pointer shadow-md shadow-onyx/25 
-            transition duration-150 
-            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+            className="otherButton rounded-full pt-[2px] px-2 mb-1 mx-5"
         />
       </form>
       }
       { displayEdit && 
-        <li>
+        <li key={`${noteId}EditOn`} id={`${noteId}EditOn`}>
           <button
+            key={`${noteId}EditButtonOn`}
             className="bg-mBrDark border-mBrDark rounded-lg border-[2px] p-1
-            transition duration-150 text-mGLight
+            transition duration-150 text-mGLight shadow-inner shadow-onyx/25
             hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
             onClick={() => setDisplayEdit(!displayEdit)}
           ><HiOutlinePencilSquare 
@@ -66,11 +68,10 @@ function EditNoteSetup({ noteId }) {
         </li>
       }
       { !displayEdit && 
-        <li>
+        <li key={`${noteId}EditOff`} id={`${noteId}EditOff`}>
           <button
-            className="bg-mGLight border-mBrDark rounded-lg border-[2px] p-1
-            transition duration-150 text-mBrDark shadow-inner shadow-onyx/25
-            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+            key={`${noteId}EditButtonOff`}
+            className="otherButton rounded-lg p-1"
             onClick={() => setDisplayEdit(!displayEdit)}
           ><HiOutlinePencilSquare 
               size={20}
@@ -78,7 +79,8 @@ function EditNoteSetup({ noteId }) {
           </button>
         </li>
       }
-      <li><DeleteNoteButton
+      <li key={`${noteId}Delete`} id={`${noteId}Delete`}>
+        <DeleteNoteButton
             noteId={noteId} /></li>
     </>
   )

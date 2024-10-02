@@ -1,9 +1,8 @@
-import Header from "./components/Header"
+import { useEffect } from "react"
 import { Outlet } from "react-router-dom"
 import { useSelector } from "react-redux"
-import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-
+import Header from "./components/Header"
 
 function App() {
   const userId = useSelector((state) => state.userId)
@@ -21,11 +20,9 @@ function App() {
       {userId && 
         <Header />
       }
-
         <main className="">
          <Outlet />
         </main>
-
     </>
   )
 }

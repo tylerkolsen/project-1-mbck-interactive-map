@@ -1,11 +1,9 @@
-import axios from "axios"
-import { useSelector } from "react-redux"
 import { useState, useEffect } from "react"
+import { useSelector, useDispatch } from "react-redux"
+import axios from "axios"
+import handleCollect from "../Functions/handleCollect.js"
 import CollectModal from "../components/CollectModal.jsx"
-import { useDispatch } from "react-redux"
-import handleCollect from "../Functions/handleCollect"
 import DeleteHistoryButton from "../components/DeleteHistoryButton.jsx"
-
 
 const UserHistory = () => {
     const userHistory = useSelector((state) => state.userHistory)
@@ -29,9 +27,7 @@ const UserHistory = () => {
                 key={his.usersCollectClickId} 
                 id={his.usersCollectClickId}
                 onClick={() => handleCollect(his.collectibleId, setDisplayModal, dispatch)}
-                className="cursor-pointer text-mBrDark border-[2px] border-mBrDark bg-mGLight pb-1 pt-2 px-2 rounded-full my-1 
-                transition duration-150 
-                hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+                className="otherButton flow-root rounded-full pb-1 pt-2 px-2 my-1"
             >{his.collectible.title}</li>
         )
     })

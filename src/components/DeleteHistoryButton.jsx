@@ -1,5 +1,5 @@
-import axios from "axios"
 import { useDispatch } from "react-redux"
+import axios from "axios"
 
 function DeleteHistoryButton() {
 
@@ -19,9 +19,7 @@ function DeleteHistoryButton() {
   return (
     <button
         onClick={handleDelete}
-        className="cursor-pointer border-mBrDark border-[2px] px-[13px] pt-[2px] m-3 rounded-full bg-mGLight text-mBrDark shadow-md shadow-onyx/25
-        transition duration-150
-        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+        className="otherButton rounded-full px-[13px] pt-[2px] m-3 "
     >Delete History</button>
   )
 }

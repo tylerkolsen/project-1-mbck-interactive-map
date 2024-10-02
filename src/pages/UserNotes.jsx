@@ -1,10 +1,9 @@
-import { useSelector, useDispatch } from "react-redux"
 import { useState, useEffect } from "react"
-import CollectModal from "../components/CollectModal.jsx"
-import handleCollect from "../Functions/handleCollect.js"
-import EditNoteSetup from "../components/EditNoteSetup.jsx"
+import { useSelector, useDispatch } from "react-redux"
 import axios from "axios"
-
+import CollectModal from "../components/CollectModal.jsx"
+import EditNoteSetup from "../components/EditNoteSetup.jsx"
+import handleCollect from "../Functions/handleCollect.js"
 
 const UserNotes = () => {
     const userNote = useSelector((state) => state.userNote)
@@ -26,8 +25,11 @@ const UserNotes = () => {
     const allNotes = userNote.map((note, idx) => {
         if (idx !== 0 && note.collectible.title === userNote[idx - 1].collectible.title) {
             return (
-                <li key={`${note.noteId} nest`}>
-                   <ul className="flex flex-row items-center space-x-2 px-2 py-1">
+                <li key={`${note.noteId}Nest`} id={`${note.noteId}Nest`}>
+                   <ul
+                        key={`${note.noteId}NestedUl`} 
+                        className="flex flex-row items-center space-x-2 px-2 py-1"
+                    >
                         <li 
                             key={note.noteId} 
                             id={note.noteId}
@@ -47,12 +49,12 @@ const UserNotes = () => {
                         key={`${note.noteId}Title`} 
                         id={`${note.noteId}Title`}
                         onClick={() => handleCollect(note.collectibleId, setDisplayModal, dispatch)}
-                        className="cursor-pointer text-mBrDark border-mBrDark bg-mGLight border-[2px] pb-1 pt-2 px-2 rounded-full my-1 shadow-md shadow-onyx/25 
-                        transition duration-150 
-                        hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
+                        className="otherButton rounded-full pb-1 pt-2 px-2 my-1" 
                     >{note.collectible.title}</li>
-                    <li key={`${note.noteId}Parent`}>
-                        <ul className="flex flex-row items-center space-x-2 px-2 pt-2 pb-1">
+                    <li key={`${note.noteId}Parent`} id={`${note.noteId}Parent`}>
+                        <ul 
+                            key={`${note.noteId}NestedUl`}
+                            className="flex flex-row items-center space-x-2 px-2 pt-2 pb-1">
                             <li 
                                 key={note.noteId} 
                                 id={note.noteId}
@@ -78,7 +80,7 @@ const UserNotes = () => {
             <div className="flex flex-col text-center md:w-[66vw] mx-2">
                 <h1 className="text-mBrDark text-3xl text-center mb-[6px] pb-[3px] pt-3 border-b-[2px] border-mBrDark w-full"
                 >User Notes</h1>
-                <ul>
+                <ul key="noteContainer">
                     {allNotes}
                 </ul>
             </div>  

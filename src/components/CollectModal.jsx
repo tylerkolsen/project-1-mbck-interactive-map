@@ -50,14 +50,19 @@ function CollectModal({ setDisplayModal }) {
             <p
                 className="px-2 py-1 text-mBrDark"
             >{description}</p>
-            <label
-                className="px-2 py-1 text-onyx"
-            >Notes:</label>
-            <ul
-                className="px-2 py-1 text-mBrDark"
-            >
-                {allNotes}
-            </ul>
+            { notes.length > 0 && 
+                <>
+                    <label
+                        className="px-2 py-1 text-onyx"
+                    >Notes:</label>
+                    <ul
+                        className="px-2 py-1 text-mBrDark"
+                    >
+                    {allNotes}
+                    </ul>
+                </>
+            }
+            
             <AddNoteButton />
         </div>
     </div>
