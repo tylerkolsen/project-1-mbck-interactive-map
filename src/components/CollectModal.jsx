@@ -12,13 +12,13 @@ function CollectModal({ displayModal, setDisplayModal }) {
         setAniDisplay(false)
         setTimeout(() => {
             setDisplayModal(false)
-        }, 1010)
+        }, 1025)
     }
 
     const delayModalOpen = () => {
         setTimeout(() => {
             setAniDisplay(true)
-        }, 10)
+        }, 25)
     }
 
     useEffect(() => {

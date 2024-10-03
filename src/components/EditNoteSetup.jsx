@@ -37,7 +37,7 @@ function EditNoteSetup({ noteId }) {
       <form 
         key={`${noteId}Form`}
         onSubmit={(e) => handleEditNote(e)}
-        className="flex flex-col justify-center w-[150px] md:w-auto"
+        className="flex flex-col justify-center w-[140px] md:w-auto"
       >
         <textarea
           key={`${noteId}TextArea`}
