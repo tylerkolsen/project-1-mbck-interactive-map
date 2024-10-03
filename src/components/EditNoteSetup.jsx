@@ -53,32 +53,22 @@ function EditNoteSetup({ noteId }) {
         />
       </form>
       }
-      { displayEdit && 
-        <li key={`${noteId}EditOn`} id={`${noteId}EditOn`}>
-          <button
-            key={`${noteId}EditButtonOn`}
-            className="bg-mBrDark border-mBrDark rounded-lg border-[2px] p-1
-            transition duration-150 text-mGLight shadow-inner shadow-onyx/25
-            hover:bg-mBrDark hover:text-mGLight hover:scale-105 active:scale-100"
-            onClick={() => setDisplayEdit(!displayEdit)}
-          ><HiOutlinePencilSquare 
-              size={20}
-            />
-          </button>
-        </li>
-      }
-      { !displayEdit && 
-        <li key={`${noteId}EditOff`} id={`${noteId}EditOff`}>
-          <button
-            key={`${noteId}EditButtonOff`}
-            className="otherButton rounded-lg p-1"
-            onClick={() => setDisplayEdit(!displayEdit)}
-          ><HiOutlinePencilSquare 
-              size={20}
-            />
-          </button>
-        </li>
-      }
+      <li key={`${noteId}Edit`} id={`${noteId}Edit`}>
+        <button
+          key={`${noteId}EditButton`}
+          className={`rounded-lg p-1
+            ${ displayEdit 
+                ? "otherButton !bg-mBrDark !text-mGLight"
+                : "otherButton"
+            }  
+          `}
+          onClick={() => setDisplayEdit(!displayEdit)}
+        ><HiOutlinePencilSquare 
+            size={20}
+          />
+        </button>
+      </li>
+      
       <li key={`${noteId}Delete`} id={`${noteId}Delete`}>
         <DeleteNoteButton
             noteId={noteId} /></li>
