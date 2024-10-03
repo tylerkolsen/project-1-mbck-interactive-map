@@ -16,15 +16,18 @@ const Header = () => {
                             className="flex md:hidden text-mBrDark text-2xl pt-[6px] flex-1"
                         >MBCK Interactive</h2>
                     </li>
-                    <li className={`border-[2px] rounded-lg p-1 flex-none
+                    <li 
+                        className={`rounded-lg p-1 flex-none
                         ${displayMobileMenu 
-                            ? "bg-mBrDark border-mBrDark text-mGLight"
-                            : "bg-mGLight border-mBrDark text-mBrDark"
+                            ? "otherButton !bg-mBrDark !text-mGLight"
+                            : "otherButton"
                         }
-                    `}>
+                        `}
+                        onClick={() => setDisplayMobileMenu(!displayMobileMenu)}
+                    >
                         <RxHamburgerMenu 
                             size={20}
-                            onClick={() => setDisplayMobileMenu(!displayMobileMenu)}/>
+                        />
                     </li>
                 </ul>
                 <h2
