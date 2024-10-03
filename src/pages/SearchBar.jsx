@@ -82,7 +82,7 @@ function SearchBar() {
                     />
                 </form>
                 <ul
-                    className="border-t-[2px] border-mBrDark mt-5 pt-4"
+                    className="border-t-[2px] border-mBrDark mt-5 pt-4 px-2"
                 >
                     { displayError && 
                         <li className="text-mBrDark">{error}</li>
